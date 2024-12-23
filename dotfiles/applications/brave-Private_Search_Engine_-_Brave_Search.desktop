@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Private Search Engine - Brave Search
+Exec=/nix/store/mmx80ybbk341vfzb4f264c7nrbmdal87-brave-1.69.153/opt/brave.com/brave/brave-browser --profile-directory=Default --ignore-profile-directory-if-not-exists https://search.brave.com/
+Icon=/home/burij/.config/BraveSoftware/Brave-Browser/Default/Web Shortcut Icons/shortcut-5457bf5defa8089496421c6b7d23727a.png
+URL=https://search.brave.com/
+Comment=https://search.brave.com/ in einem neuen Tab in Brave öffnen.

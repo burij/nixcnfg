@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Quadratic Data Grid
+Exec=/nix/store/my5l6r5v5jv2d0n7rg6q2vlj0a8q2d7l-brave-1.63.162/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=babmlmfpfpnchoeeacfjodlemccakahm
+Icon=brave-babmlmfpfpnchoeeacfjodlemccakahm-Default
+StartupWMClass=crx_babmlmfpfpnchoeeacfjodlemccakahm

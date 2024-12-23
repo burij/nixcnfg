@@ -1,0 +1,4 @@
+nix-build -A sunvox -o r.sunvox
+nix-build -A pixilang -o r.pixilang
+nix-build -A ocenaudio -o r.ocenaudio
+

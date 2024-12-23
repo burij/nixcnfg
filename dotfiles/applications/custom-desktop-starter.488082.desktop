@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/burij/.local/share/icons/custom_apps/pixilang.png
+Name=Pixilang
+Name[en]=Pixilang
+Name[en_US]=Pixilang
+Name[en_US.UTF-8]=Pixilang
+Exec=pixilang
+Hidden=false
+NoDisplay=false
+StartupNotify=false
+Terminal=false
+

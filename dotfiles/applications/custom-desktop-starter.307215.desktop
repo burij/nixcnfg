@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/burij/.local/share/icons/custom_apps/ocenaudio.png
+Exec=ocenaudio
+Hidden=false
+NoDisplay=false
+StartupNotify=false
+Terminal=false
+Name=Ocenaudio
+Name[en]=Ocenaudio
+Name[en_US]=Ocenaudio
+Name[en_US.UTF-8]=Ocenaudio
+

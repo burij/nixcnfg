@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Notes - Nextcloud
+Exec=/nix/store/gm1gswfvsa7kqklr3km6nwmnmc3hpiyg-brave-1.70.123/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=fnndgodhlemmlgibkiknkibdakocpcpp
+Icon=brave-fnndgodhlemmlgibkiknkibdakocpcpp-Default
+StartupWMClass=crx_fnndgodhlemmlgibkiknkibdakocpcpp

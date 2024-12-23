@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=SoundCloud
+Exec=/nix/store/0j2wql7v1c2d9b0arhf5crqqjnkliad1-brave-1.58.124/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=eikjhbkpemdappjfcmdeeeamdpkgabmk
+Icon=brave-eikjhbkpemdappjfcmdeeeamdpkgabmk-Default
+StartupWMClass=crx_eikjhbkpemdappjfcmdeeeamdpkgabmk
+OnlyShowIn=Old;
+Name[en]=SoundCloud
+Name[en_US]=SoundCloud
+Name[en_US.UTF-8]=SoundCloud
+Hidden=false
+NoDisplay=false
+StartupNotify=false
+

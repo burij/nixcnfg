@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Crates
+Exec=/nix/store/d2n3xh4id0bqdarfl1lzydm2qdp6inca-brave-1.68.134/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=looocdlldabkdcccegkpflnoolcdkbna
+Icon=brave-looocdlldabkdcccegkpflnoolcdkbna-Default
+StartupWMClass=crx_looocdlldabkdcccegkpflnoolcdkbna

@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Contacts
+Exec=/nix/store/dff4nha8py4s38yvpmrbkmnywr944pgj-brave-1.67.116/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=pmcngklofgngifnoceehmchjlildnhkj
+Icon=brave-pmcngklofgngifnoceehmchjlildnhkj-Default
+StartupWMClass=crx_pmcngklofgngifnoceehmchjlildnhkj

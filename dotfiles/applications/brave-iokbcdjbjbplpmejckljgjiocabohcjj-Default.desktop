@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV Shows
+Exec=/nix/store/n82ixdb7m2qlcq9yxkr18d9592dhjhrv-brave-1.61.101/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=iokbcdjbjbplpmejckljgjiocabohcjj
+Icon=brave-iokbcdjbjbplpmejckljgjiocabohcjj-Default
+StartupWMClass=crx_iokbcdjbjbplpmejckljgjiocabohcjj

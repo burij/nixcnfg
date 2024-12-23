@@ -1,0 +1,1054 @@
+zrythm-Message: 09:43:36.144: (zrythm_app_init_thread:460): 
+Zrythm 1.0.0+ (debugoptimized)
+  built with gcc 14.2.0 for linux
+    +carla
+    +jack2
+    +pulse
+    +rtaudio
+    +lsp-dsp-lib
+
+zrythm-Message: 09:43:36.144: (greeter_widget_set_progress_and_status:339): Initializing caches
+zrythm-Message: 09:43:36.144: (greeter_widget_set_progress_and_status:339): Initializing file manager
+zrythm-Message: 09:43:36.146: (load_files_from_location:278): Total files: 41
+zrythm-Message: 09:43:36.146: (greeter_widget_set_progress_and_status:343): [Scanning Plugins] Scanning Plugins
+(zrythm:21): zrythm-DEBUG: 09:43:36.146: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.146: (string_print_strv:573): LV2 paths: /app/lib/lv2 | /app/extensions/Plugins/lv2 | /app/lib/zrythm/lv2 | /app/share/zrythm/lv2 
+(zrythm:21): zrythm-DEBUG: 09:43:36.171: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#mono
+zrythm-Message: 09:43:36.171: (add_category_and_author:82): add_category_and_author: Plugin
+zrythm-Message: 09:43:36.171: (add_category_and_author:102): add_category_and_author: Breakfast Quay
+(zrythm:21): zrythm-DEBUG: 09:43:36.171: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#r3mono
+(zrythm:21): zrythm-DEBUG: 09:43:36.171: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#r3stereo
+(zrythm:21): zrythm-DEBUG: 09:43:36.171: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#stereo
+(zrythm:21): zrythm-DEBUG: 09:43:36.172: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/audiofile
+zrythm-Message: 09:43:36.172: (add_category_and_author:102): add_category_and_author: Filipe Coelho
+(zrythm:21): zrythm-DEBUG: 09:43:36.173: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/audiogain
+(zrythm:21): zrythm-DEBUG: 09:43:36.173: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/audiogain_s
+(zrythm:21): zrythm-DEBUG: 09:43:36.173: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/lfo
+(zrythm:21): zrythm-DEBUG: 09:43:36.175: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midichanab
+(zrythm:21): zrythm-DEBUG: 09:43:36.176: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midichanfilter
+(zrythm:21): zrythm-DEBUG: 09:43:36.176: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midichannelize
+(zrythm:21): zrythm-DEBUG: 09:43:36.177: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midifile
+(zrythm:21): zrythm-DEBUG: 09:43:36.177: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midigain
+(zrythm:21): zrythm-DEBUG: 09:43:36.178: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midijoin
+(zrythm:21): zrythm-DEBUG: 09:43:36.179: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midisplit
+(zrythm:21): zrythm-DEBUG: 09:43:36.179: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/miditranspose
+(zrythm:21): zrythm-DEBUG: 09:43:36.179: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-amp
+zrythm-Message: 09:43:36.179: (add_category_and_author:82): add_category_and_author: Dynamics
+zrythm-Message: 09:43:36.179: (add_category_and_author:102): add_category_and_author: 
+(zrythm:21): zrythm-DEBUG: 09:43:36.180: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-fifths
+(zrythm:21): zrythm-DEBUG: 09:43:36.180: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-metro
+(zrythm:21): zrythm-DEBUG: 09:43:36.180: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-midigate
+(zrythm:21): zrythm-DEBUG: 09:43:36.180: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-params
+(zrythm:21): zrythm-DEBUG: 09:43:36.181: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-sampler
+(zrythm:21): zrythm-DEBUG: 09:43:36.181: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-scope#Mono
+zrythm-Message: 09:43:36.181: (add_category_and_author:102): add_category_and_author: Robin Gareus
+(zrythm:21): zrythm-DEBUG: 09:43:36.181: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-scope#Stereo
+(zrythm:21): zrythm-DEBUG: 09:43:36.182: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/compressor
+zrythm-Message: 09:43:36.182: (add_category_and_author:102): add_category_and_author: Zrythm DAW
+(zrythm:21): zrythm-DEBUG: 09:43:36.182: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/cubic_distortion
+zrythm-Message: 09:43:36.182: (add_category_and_author:82): add_category_and_author: Distortion
+(zrythm:21): zrythm-DEBUG: 09:43:36.183: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/flanger
+zrythm-Message: 09:43:36.183: (add_category_and_author:82): add_category_and_author: Modulator
+(zrythm:21): zrythm-DEBUG: 09:43:36.183: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/gate_stereo
+(zrythm:21): zrythm-DEBUG: 09:43:36.184: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/highpass_filter
+zrythm-Message: 09:43:36.184: (add_category_and_author:82): add_category_and_author: Filter
+(zrythm:21): zrythm-DEBUG: 09:43:36.184: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/lowpass_filter
+(zrythm:21): zrythm-DEBUG: 09:43:36.185: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/parametric_eq
+zrythm-Message: 09:43:36.185: (add_category_and_author:82): add_category_and_author: Equaliser
+(zrythm:21): zrythm-DEBUG: 09:43:36.185: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/peak_limiter
+(zrythm:21): zrythm-DEBUG: 09:43:36.186: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/phaser
+(zrythm:21): zrythm-DEBUG: 09:43:36.186: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/smooth_delay
+zrythm-Message: 09:43:36.186: (add_category_and_author:82): add_category_and_author: Delay
+(zrythm:21): zrythm-DEBUG: 09:43:36.187: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/triple_synth
+zrythm-Message: 09:43:36.187: (add_category_and_author:82): add_category_and_author: Instrument
+(zrythm:21): zrythm-DEBUG: 09:43:36.188: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/wah4
+(zrythm:21): zrythm-DEBUG: 09:43:36.188: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/white_noise
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/zita_rev1
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.189: (string_print_strv:573): DSSI paths: /app/extensions/Plugins/dssi 
+zrythm-Message: 09:43:36.189: (z_carla_discovery_start:292): no plugins to scan for DSSI (given paths: /app/extensions/Plugins/dssi)
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.189: (string_print_strv:573): LADSPA paths: /app/extensions/Plugins/ladspa 
+zrythm-Message: 09:43:36.189: (z_carla_discovery_start:292): no plugins to scan for LADSPA (given paths: /app/extensions/Plugins/ladspa)
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.189: (string_print_strv:573): VST2 paths: /app/extensions/Plugins/vst 
+zrythm-Message: 09:43:36.189: (z_carla_discovery_start:292): no plugins to scan for VST (given paths: /app/extensions/Plugins/vst)
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.189: (string_print_strv:573): VST3 paths: /app/extensions/Plugins/vst3 
+zrythm-Message: 09:43:36.189: (z_carla_discovery_start:292): no plugins to scan for VST3 (given paths: /app/extensions/Plugins/vst3)
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.189: (z_carla_discovery_start:292): no plugins to scan for SF2 (given paths: )
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.189: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.189: (string_print_strv:573): CLAP paths: /app/extensions/Plugins/clap 
+zrythm-Message: 09:43:36.189: (z_carla_discovery_start:292): no plugins to scan for CLAP (given paths: /app/extensions/Plugins/clap)
+zrythm-Message: 09:43:36.189: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:43:36.190: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:43:36.190: (string_print_strv:573): JSFX paths
+zrythm-Message: 09:43:36.190: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:43:36.207: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:43:36.208: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+(zrythm:21): Gdk-DEBUG: 09:43:36.208: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 0 into new device 0
+(zrythm:21): Gdk-DEBUG: 09:43:36.208: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 1 into new device 1
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+(zrythm:21): Gdk-DEBUG: 09:43:36.209: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 0 into new device 0
+(zrythm:21): Gdk-DEBUG: 09:43:36.209: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 1 into new device 1
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:43:36.209: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+(zrythm:21): Gdk-DEBUG: 09:43:36.209: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 0 into new device 0
+(zrythm:21): Gdk-DEBUG: 09:43:36.209: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 1 into new device 1
+Gdk-INFO: 09:43:36.210: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_radeon.so due to not having any physical devices
+Gdk-INFO: 09:43:36.210: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_nouveau.so due to not having any physical devices
+Gdk-INFO: 09:43:36.210: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_intel_hasvk.so due to not having any physical devices
+Gdk-INFO: 09:43:36.210: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_virtio.so due to not having any physical devices
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Failed to find vkGetDeviceProcAddr in layer "libVkLayer_MESA_device_select.so"
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: vkCreateDevice layer callstack setup to:
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:    <Application>
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      ||
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:    <Loader>
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      ||
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:    <Device>
+Gdk-INFO: 09:43:36.211: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:        Using "Intel(R) UHD Graphics 620 (KBL GT2)" with driver: "/usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_intel.so"
+zrythm-Message: 09:43:36.225: (zrythm_app_startup:1234): done
+zrythm-Message: 09:43:36.225: (zrythm_app_activate:562): Activating...
+zrythm-Message: 09:43:36.225: (zrythm_app_activate:565): done
+zrythm-Message: 09:43:36.229: (cached_plugin_descriptors_serialize_to_file:26): Serializing cached plugin descriptors...
+zrythm-Message: 09:43:36.230: (cached_plugin_descriptors_serialize_to_file:38): Writing cached plugin descriptors to /run/user/1000/doc/9333645f/zrythm/cached_plugin_descriptors.yaml...
+zrythm-Message: 09:43:36.245: (on_plugin_scan_finished:420): plugin scan finished
+(zrythm:21): Gtk-DEBUG: 09:43:36.291: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+zrythm-Message: 09:43:36.300: (on_prompt_for_project:511): prompting for project...
+zrythm-Message: 09:43:36.302: (on_prompt_for_project:544): done
+(zrythm:21): Gtk-DEBUG: 09:43:36.367: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:43:36.369: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:43:36.369: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:43:45.079: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:43:45.079: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:43:59.415: (gtk_icon_paintable_snapshot_symbolic:3917): snapshot symbolic icon using mask
+zrythm-Message: 09:43:59.543: (on_create_project_confirm_clicked:417): creating project at: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto
+zrythm-Message: 09:43:59.543: (on_create_project_confirm_clicked:430): Creating blank project
+zrythm-Message: 09:43:59.549: (post_finish:133): activating zrythm_app.load_project
+zrythm-Message: 09:43:59.549: (greeter_widget_set_progress_and_status:339): Loading Project
+(zrythm:21): zrythm-DEBUG: 09:43:59.549: (on_load_project:407): on_load_project called | open filename '(null)' | opening template 0
+zrythm-Message: 09:43:59.549: (project_init_flow_manager_load_or_create_default_project:1228): project_init_flow_manager_load_or_create_default_project: [STEP 0] filename: (null), is template: 0
+zrythm-Message: 09:43:59.549: (create_default:502): creating default project...
+zrythm-Message: 09:43:59.549: (create_default:509): hiding prev window...
+zrythm-Message: 09:43:59.549: (project_new:714): project_new: Creating...
+zrythm-Message: 09:43:59.549: (project_new:738): project_new: done
+zrythm-Message: 09:43:59.550: (engine_new:903): Creating audio engine...
+zrythm-Message: 09:43:59.550: (transport_new:113): transport_new: Creating transport...
+(zrythm:21): zrythm-DEBUG: 09:43:59.550: (audio_file_read_metadata:165): attempting to read metadata for /app/share/zrythm/samples/square_emphasis.wav
+(zrythm:21): zrythm-DEBUG: 09:43:59.551: (ensure_sndfile:141): opening sndfile at /app/share/zrythm/samples/square_emphasis.wav...
+(zrythm:21): zrythm-DEBUG: 09:43:59.551: (audio_file_finish:302): closing sndfile at /app/share/zrythm/samples/square_emphasis.wav...
+(zrythm:21): zrythm-DEBUG: 09:43:59.551: (ensure_sndfile:141): opening sndfile at /app/share/zrythm/samples/square_emphasis.wav...
+(zrythm:21): zrythm-DEBUG: 09:43:59.551: (audio_file_read_samples:274): reading all frames from file /app/share/zrythm/samples/square_emphasis.wav
+(zrythm:21): zrythm-DEBUG: 09:43:59.551: (resampler_new:70): creating new resampler for 3456 frames at 48000.00 Hz to 44000.00 Hz - 1 channels
+(zrythm:21): zrythm-DEBUG: 09:43:59.552: (audio_file_finish:302): closing sndfile at /app/share/zrythm/samples/square_emphasis.wav...
+(zrythm:21): zrythm-DEBUG: 09:43:59.553: (audio_file_read_metadata:165): attempting to read metadata for /app/share/zrythm/samples/square_normal.wav
+(zrythm:21): zrythm-DEBUG: 09:43:59.553: (ensure_sndfile:141): opening sndfile at /app/share/zrythm/samples/square_normal.wav...
+(zrythm:21): zrythm-DEBUG: 09:43:59.553: (audio_file_finish:302): closing sndfile at /app/share/zrythm/samples/square_normal.wav...
+(zrythm:21): zrythm-DEBUG: 09:43:59.553: (ensure_sndfile:141): opening sndfile at /app/share/zrythm/samples/square_normal.wav...
+(zrythm:21): zrythm-DEBUG: 09:43:59.553: (audio_file_read_samples:274): reading all frames from file /app/share/zrythm/samples/square_normal.wav
+(zrythm:21): zrythm-DEBUG: 09:43:59.553: (resampler_new:70): creating new resampler for 3072 frames at 48000.00 Hz to 44000.00 Hz - 1 channels
+(zrythm:21): zrythm-DEBUG: 09:43:59.554: (audio_file_finish:302): closing sndfile at /app/share/zrythm/samples/square_normal.wav...
+zrythm-Message: 09:43:59.554: (router_new:230): Creating new router...
+zrythm-Message: 09:43:59.554: (router_new:239): done
+zrythm-Message: 09:43:59.555: (undo_manager_new:53): undo_manager_new: creating...
+zrythm-Message: 09:43:59.555: (undo_manager_new:61): undo_manager_new: done
+zrythm-Message: 09:43:59.555: (create_default:534): adding chord track...
+(zrythm:21): zrythm-DEBUG: 09:43:59.555: (track_new:220): creating track 'Chords'
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (track_generate_automation_tracks:1626): generated automation tracks for 'Chords'
+zrythm-Message: 09:43:59.556: (tracklist_insert_track:276): inserting Chords at 0 (has output 0)...
+zrythm-Message: 09:43:59.556: (tracklist_selections_clear:167): clearing tracklist selections...
+zrythm-Message: 09:43:59.556: (tracklist_selections_clear:191): done
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (tracklist_selections_add_track:125): Chords currently recording: 0, have channel: 1
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (track_set_recording:742): Chords: setting recording 1 (fire events: 0)
+zrythm-Message: 09:43:59.556: (track_set_recording:758): enabled recording on Chords
+zrythm-Message: 09:43:59.556: (channel_connect:915): connecting channel...
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Pre-Fader out => [Chords (2881579944)] Ch MIDI Fader in>; have 1 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Fader out => [Chords (2881579944)] MIDI out>; have 2 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] TP MIDI out => [Chords (2881579944)] Ch MIDI Pre-Fader in>; have 3 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Pre-Fader out => [Chords (2881579944)] Channel Send 1 MIDI in>; have 4 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Pre-Fader out => [Chords (2881579944)] Channel Send 2 MIDI in>; have 5 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.556: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Pre-Fader out => [Chords (2881579944)] Channel Send 3 MIDI in>; have 6 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.557: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Pre-Fader out => [Chords (2881579944)] Channel Send 4 MIDI in>; have 7 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.557: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Pre-Fader out => [Chords (2881579944)] Channel Send 5 MIDI in>; have 8 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.557: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Pre-Fader out => [Chords (2881579944)] Channel Send 6 MIDI in>; have 9 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.557: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Fader out => [Chords (2881579944)] Channel Send 7 MIDI in>; have 10 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.557: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Fader out => [Chords (2881579944)] Channel Send 8 MIDI in>; have 11 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.557: (port_connections_manager_ensure_connect:348): New connection: <[Chords (2881579944)] Ch MIDI Fader out => [Chords (2881579944)] Channel Send 9 MIDI in>; have 12 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.557: (channel_reconnect_ext_input_ports:522): reconnecting ext inputs for Chords
+zrythm-Message: 09:43:59.557: (port_set_expose_to_backend:3013): audio engine not set up, skipping expose to backend for track_processor_midi_in
+zrythm-Message: 09:43:59.557: (router_recalc_graph:164): Recalculating...
+zrythm-Message: 09:43:59.566: (graph_update_latencies:475): updating graph latencies...
+(zrythm:21): zrythm-DEBUG: 09:43:59.566: (graph_update_latencies:482): setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (graph_update_latencies:490): done setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (graph_update_latencies:492): iterating over 124 nodes...
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (graph_update_latencies:503): iterating done...
+zrythm-Message: 09:43:59.567: (graph_update_latencies:505): Total latencies:
+Playback: 0
+Recording: 0
+
+zrythm-Message: 09:43:59.567: (audio_get_num_cores:464): Number of CPU cores found: 8
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (graph_thread_new:439): creating RT thread
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (get_absolute_rt_priority:320): min 1 max 99 requested -22
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (get_absolute_rt_priority:348): priority before: 77
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (get_absolute_rt_priority:354): current rtprio limit: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (get_absolute_rt_priority:362): priority after: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (graph_thread_new:439): creating RT thread
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (get_absolute_rt_priority:320): min 1 max 99 requested -22
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (get_absolute_rt_priority:348): priority before: 77
+(zrythm:21): zrythm-DEBUG: 09:43:59.567: (get_absolute_rt_priority:354): current rtprio limit: 0
+zrythm-Message: 09:43:59.567: (dsp_worker_thread:101): WORKER THREAD 0 created (num threads 6)
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (get_absolute_rt_priority:362): priority after: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (graph_thread_new:439): creating RT thread
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (get_absolute_rt_priority:320): min 1 max 99 requested -22
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (get_absolute_rt_priority:348): priority before: 77
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (get_absolute_rt_priority:354): current rtprio limit: 0
+zrythm-Message: 09:43:59.568: (dsp_worker_thread:101): WORKER THREAD 1 created (num threads 6)
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (get_absolute_rt_priority:362): priority after: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (graph_thread_new:439): creating RT thread
+(zrythm:21): zrythm-DEBUG: 09:43:59.568: (get_absolute_rt_priority:320): min 1 max 99 requested -22
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:348): priority before: 77
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:354): current rtprio limit: 0
+zrythm-Message: 09:43:59.568: (dsp_worker_thread:101): WORKER THREAD 2 created (num threads 6)
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:362): priority after: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (graph_thread_new:439): creating RT thread
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:320): min 1 max 99 requested -22
+zrythm-Message: 09:43:59.569: (dsp_worker_thread:101): WORKER THREAD 3 created (num threads 6)
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:348): priority before: 77
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:354): current rtprio limit: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:362): priority after: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (graph_thread_new:439): creating RT thread
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:320): min 1 max 99 requested -22
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:348): priority before: 77
+zrythm-Message: 09:43:59.569: (dsp_worker_thread:101): WORKER THREAD 4 created (num threads 6)
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:354): current rtprio limit: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.569: (get_absolute_rt_priority:362): priority after: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (graph_thread_new:439): creating RT thread
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (get_absolute_rt_priority:320): min 1 max 99 requested -22
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (get_absolute_rt_priority:348): priority before: 77
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (get_absolute_rt_priority:354): current rtprio limit: 0
+zrythm-Message: 09:43:59.570: (dsp_worker_thread:101): WORKER THREAD 5 created (num threads 6)
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (get_absolute_rt_priority:362): priority after: 0
+zrythm-Message: 09:43:59.570: (channel_connect:980): done connecting channel
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (track_validate:959): validating track 'Chords'...
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (track_validate:1075): done validating track 'Chords'
+(zrythm:21): zrythm-DEBUG: 09:43:59.570: (track_widget_new:1804): creating new track widget for Chords
+zrythm-Message: 09:43:59.587: (tracklist_insert_track:402): tracklist_insert_track: done - inserted track 'Chords' (2881579944) at 0
+zrythm-Message: 09:43:59.587: (create_default:546): adding tempo track...
+(zrythm:21): zrythm-DEBUG: 09:43:59.587: (track_new:220): creating track 'Tempo'
+(zrythm:21): zrythm-DEBUG: 09:43:59.587: (track_generate_automation_tracks:1626): generated automation tracks for 'Tempo'
+zrythm-Message: 09:43:59.587: (tracklist_insert_track:276): inserting Tempo at 1 (has output 0)...
+zrythm-Message: 09:43:59.587: (tracklist_selections_clear:167): clearing tracklist selections...
+(zrythm:21): zrythm-DEBUG: 09:43:59.587: (track_set_recording:742): Chords: setting recording 0 (fire events: 0)
+zrythm-Message: 09:43:59.587: (track_set_recording:762): disabled recording on Chords
+zrythm-Message: 09:43:59.588: (tracklist_selections_clear:191): done
+(zrythm:21): zrythm-DEBUG: 09:43:59.588: (tracklist_selections_add_track:125): Tempo currently recording: 0, have channel: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.588: (track_validate:959): validating track 'Tempo'...
+(zrythm:21): zrythm-DEBUG: 09:43:59.588: (track_validate:1075): done validating track 'Tempo'
+(zrythm:21): zrythm-DEBUG: 09:43:59.588: (track_widget_new:1804): creating new track widget for Tempo
+zrythm-Message: 09:43:59.591: (tracklist_insert_track:402): tracklist_insert_track: done - inserted track 'Tempo' (237521738) at 1
+zrythm-Message: 09:43:59.591: (engine_update_frames_per_tick:146): updating frames per tick: beats per bar 4, bpm 140.000000, sample rate 44000
+zrythm-Message: 09:43:59.591: (engine_update_frames_per_tick:165): frames per tick before: 0.000000 | ticks per frame before: 0.000000
+zrythm-Message: 09:43:59.591: (engine_update_frames_per_tick:176): frames per tick after: 19.642857 | ticks per frame after: 0.050909
+zrythm-Message: 09:43:59.591: (create_default:561): adding modulator track...
+(zrythm:21): zrythm-DEBUG: 09:43:59.592: (track_new:220): creating track 'Modulators'
+(zrythm:21): zrythm-DEBUG: 09:43:59.592: (track_generate_automation_tracks:1626): generated automation tracks for 'Modulators'
+zrythm-Message: 09:43:59.592: (tracklist_insert_track:276): inserting Modulators at 2 (has output 0)...
+zrythm-Message: 09:43:59.592: (tracklist_selections_clear:167): clearing tracklist selections...
+zrythm-Message: 09:43:59.592: (tracklist_selections_clear:191): done
+(zrythm:21): zrythm-DEBUG: 09:43:59.592: (tracklist_selections_add_track:125): Modulators currently recording: 0, have channel: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.592: (track_validate:959): validating track 'Modulators'...
+(zrythm:21): zrythm-DEBUG: 09:43:59.592: (track_validate:1075): done validating track 'Modulators'
+(zrythm:21): zrythm-DEBUG: 09:43:59.592: (track_widget_new:1804): creating new track widget for Modulators
+zrythm-Message: 09:43:59.596: (tracklist_insert_track:402): tracklist_insert_track: done - inserted track 'Modulators' (1777295823) at 2
+zrythm-Message: 09:43:59.596: (create_default:568): adding marker track...
+(zrythm:21): zrythm-DEBUG: 09:43:59.596: (track_new:220): creating track 'Markers'
+(zrythm:21): zrythm-DEBUG: 09:43:59.596: (track_generate_automation_tracks:1626): generated automation tracks for 'Markers'
+zrythm-Message: 09:43:59.596: (tracklist_insert_track:276): inserting Markers at 3 (has output 0)...
+zrythm-Message: 09:43:59.596: (tracklist_selections_clear:167): clearing tracklist selections...
+zrythm-Message: 09:43:59.596: (tracklist_selections_clear:191): done
+(zrythm:21): zrythm-DEBUG: 09:43:59.596: (tracklist_selections_add_track:125): Markers currently recording: 0, have channel: 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.596: (track_validate:959): validating track 'Markers'...
+(zrythm:21): zrythm-DEBUG: 09:43:59.596: (track_validate:1075): done validating track 'Markers'
+(zrythm:21): zrythm-DEBUG: 09:43:59.596: (track_widget_new:1804): creating new track widget for Markers
+zrythm-Message: 09:43:59.598: (tracklist_insert_track:402): tracklist_insert_track: done - inserted track 'Markers' (361995066) at 3
+zrythm-Message: 09:43:59.598: (create_default:577): adding master track...
+(zrythm:21): zrythm-DEBUG: 09:43:59.598: (track_new:220): creating track 'Master'
+(zrythm:21): zrythm-DEBUG: 09:43:59.600: (track_generate_automation_tracks:1626): generated automation tracks for 'Master'
+zrythm-Message: 09:43:59.600: (tracklist_insert_track:276): inserting Master at 4 (has output 0)...
+zrythm-Message: 09:43:59.600: (tracklist_selections_clear:167): clearing tracklist selections...
+zrythm-Message: 09:43:59.600: (tracklist_selections_clear:191): done
+(zrythm:21): zrythm-DEBUG: 09:43:59.600: (tracklist_selections_add_track:125): Master currently recording: 0, have channel: 1
+zrythm-Message: 09:43:59.600: (channel_connect:915): connecting channel...
+(zrythm:21): zrythm-DEBUG: 09:43:59.600: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Stereo out L => [(none) (0)] Monitor Fader in L>; have 13 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.600: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Stereo out R => [(none) (0)] Monitor Fader in R>; have 14 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.600: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out L => [Master (3264778385)] Ch Fader in L>; have 15 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.600: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out R => [Master (3264778385)] Ch Fader in R>; have 16 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out L => [Master (3264778385)] Stereo out L>; have 17 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out R => [Master (3264778385)] Stereo out R>; have 18 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] TP Stereo out L => [Master (3264778385)] Ch Pre-Fader in L>; have 19 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] TP Stereo out R => [Master (3264778385)] Ch Pre-Fader in R>; have 20 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out L => [Master (3264778385)] Channel Send 1 audio in L>; have 21 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out R => [Master (3264778385)] Channel Send 1 audio in R>; have 22 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out L => [Master (3264778385)] Channel Send 2 audio in L>; have 23 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.601: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out R => [Master (3264778385)] Channel Send 2 audio in R>; have 24 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.602: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out L => [Master (3264778385)] Channel Send 3 audio in L>; have 25 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.602: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out R => [Master (3264778385)] Channel Send 3 audio in R>; have 26 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.602: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out L => [Master (3264778385)] Channel Send 4 audio in L>; have 27 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.602: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out R => [Master (3264778385)] Channel Send 4 audio in R>; have 28 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.602: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out L => [Master (3264778385)] Channel Send 5 audio in L>; have 29 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.602: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out R => [Master (3264778385)] Channel Send 5 audio in R>; have 30 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.603: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out L => [Master (3264778385)] Channel Send 6 audio in L>; have 31 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.603: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Pre-Fader out R => [Master (3264778385)] Channel Send 6 audio in R>; have 32 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.603: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out L => [Master (3264778385)] Channel Send 7 audio in L>; have 33 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.603: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out R => [Master (3264778385)] Channel Send 7 audio in R>; have 34 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.603: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out L => [Master (3264778385)] Channel Send 8 audio in L>; have 35 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.604: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out R => [Master (3264778385)] Channel Send 8 audio in R>; have 36 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.604: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out L => [Master (3264778385)] Channel Send 9 audio in L>; have 37 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.604: (port_connections_manager_ensure_connect:348): New connection: <[Master (3264778385)] Ch Fader out R => [Master (3264778385)] Channel Send 9 audio in R>; have 38 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.604: (channel_reconnect_ext_input_ports:522): reconnecting ext inputs for Master
+zrythm-Message: 09:43:59.604: (router_recalc_graph:164): Recalculating...
+zrythm-Message: 09:43:59.619: (graph_update_latencies:475): updating graph latencies...
+(zrythm:21): zrythm-DEBUG: 09:43:59.619: (graph_update_latencies:482): setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.619: (graph_update_latencies:490): done setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:43:59.619: (graph_update_latencies:492): iterating over 251 nodes...
+(zrythm:21): zrythm-DEBUG: 09:43:59.619: (graph_update_latencies:503): iterating done...
+zrythm-Message: 09:43:59.619: (graph_update_latencies:505): Total latencies:
+Playback: 0
+Recording: 0
+
+zrythm-Message: 09:43:59.619: (router_recalc_graph:198): done
+zrythm-Message: 09:43:59.619: (channel_connect:980): done connecting channel
+(zrythm:21): zrythm-DEBUG: 09:43:59.619: (track_validate:959): validating track 'Master'...
+(zrythm:21): zrythm-DEBUG: 09:43:59.619: (track_validate:1075): done validating track 'Master'
+(zrythm:21): zrythm-DEBUG: 09:43:59.619: (track_widget_new:1804): creating new track widget for Master
+zrythm-Message: 09:43:59.631: (tracklist_insert_track:402): tracklist_insert_track: done - inserted track 'Master' (3264778385) at 4
+(zrythm:21): zrythm-DEBUG: 09:43:59.631: (tracklist_selections_add_track:125): Master currently recording: 0, have channel: 1
+zrythm-Message: 09:43:59.631: (engine_pre_setup:420): engine_pre_setup: starting event timeout
+zrythm-Message: 09:43:59.632: (engine_rtaudio_setup:176): Setting up RtAudio 6.0.1...
+zrythm-Message: 09:43:59.632: (engine_rtaudio_create_rtaudio:119): RtAudio API found: jack
+zrythm-Message: 09:43:59.632: (engine_rtaudio_create_rtaudio:119): RtAudio API found: pulse
+(zrythm:21): zrythm-DEBUG: 09:43:59.632: (engine_rtaudio_create_rtaudio:131): calling rtaudio_create...
+(zrythm:21): zrythm-DEBUG: 09:43:59.632: (engine_rtaudio_create_rtaudio:140): rtaudio_create() successful
+zrythm-Message: 09:43:59.660: (engine_rtaudio_setup:206): RtAudio device 0: name: Internes Audio
+output channels: 2
+input channels: 2
+duplex channels: 2
+is default output: 1
+is default input: 1
+formats: TODO
+preferred sample rate: 48000
+sample rates: TODO
+zrythm-Message: 09:43:59.660: (engine_rtaudio_setup:217): selected device not found, using default
+zrythm-Message: 09:43:59.660: (engine_rtaudio_setup:243): Attempting to open device [Internes Audio] with sample rate 48000 and buffer size 512
+zrythm-Message: 09:43:59.721: (engine_rtaudio_setup:269): RtAudio set up
+zrythm-Message: 09:43:59.721: (engine_dummy_midi_setup:77): Setting up dummy MIDI engine
+zrythm-Message: 09:43:59.721: (engine_pre_setup:569): engine_pre_setup: processing engine events
+zrythm-Message: 09:43:59.721: (engine_setup:582): Setting up...
+zrythm-Message: 09:43:59.721: (engine_setup:585): engine_setup: processing engine events
+(zrythm:21): zrythm-DEBUG: 09:43:59.721: (hardware_processor_rescan_ext_ports:146): rescanning ports...
+(zrythm:21): zrythm-DEBUG: 09:43:59.804: (get_ext_ports_from_rtaudio:633): 1 rtaudio devices found
+zrythm-Message: 09:43:59.809: (hardware_processor_rescan_ext_ports:174): [HW] Added audio port RtAudio/Internes Audio (in 0)
+zrythm-Message: 09:43:59.809: (hardware_processor_rescan_ext_ports:174): [HW] Added audio port RtAudio/Internes Audio (in 1)
+(zrythm:21): zrythm-DEBUG: 09:43:59.810: (hardware_processor_rescan_ext_ports:250): [HW processor inputs] have 2 audio and 0 MIDI ports
+(zrythm:21): zrythm-DEBUG: 09:43:59.810: (hardware_processor_rescan_ext_ports:146): rescanning ports...
+zrythm-Message: 09:43:59.821: (hardware_processor_rescan_ext_ports:174): [HW] Added audio port RtAudio/Internes Audio (in 0)
+zrythm-Message: 09:43:59.821: (hardware_processor_rescan_ext_ports:174): [HW] Added audio port RtAudio/Internes Audio (in 1)
+(zrythm:21): zrythm-DEBUG: 09:43:59.822: (hardware_processor_rescan_ext_ports:250): [HW processor outputs] have 2 audio and 0 MIDI ports
+(zrythm:21): zrythm-DEBUG: 09:43:59.822: (port_connections_manager_ensure_connect:348): New connection: <[(none) (0)] Sample Processor Fader out L => [(none) (0)] Monitor Fader in L>; have 39 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.822: (port_connections_manager_ensure_connect:348): New connection: <[(none) (0)] Sample Processor Fader out R => [(none) (0)] Monitor Fader in R>; have 40 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.822: (port_connections_manager_ensure_connect:348): New connection: <[(none) (0)] Monitor Fader out L => [(none) (0)] Monitor Out L>; have 41 connections
+(zrythm:21): zrythm-DEBUG: 09:43:59.822: (port_connections_manager_ensure_connect:348): New connection: <[(none) (0)] Monitor Fader out R => [(none) (0)] Monitor Out R>; have 42 connections
+zrythm-Message: 09:43:59.822: (port_set_expose_to_backend:3051): called port_set_expose_to_backend with MIDI dummy backend
+zrythm-Message: 09:43:59.822: (port_set_expose_to_backend:3051): called port_set_expose_to_backend with MIDI dummy backend
+zrythm-Message: 09:43:59.822: (engine_setup:625): processing engine events
+zrythm-Message: 09:43:59.822: (engine_setup:628): done
+zrythm-Message: 09:43:59.822: (channel_expose_ports_to_backend:475): channel_expose_ports_to_backend: Chords
+zrythm-Message: 09:43:59.822: (port_set_expose_to_backend:3051): called port_set_expose_to_backend with MIDI dummy backend
+zrythm-Message: 09:43:59.822: (port_set_expose_to_backend:3051): called port_set_expose_to_backend with MIDI dummy backend
+zrythm-Message: 09:43:59.822: (channel_expose_ports_to_backend:475): channel_expose_ports_to_backend: Master
+zrythm-Message: 09:43:59.822: (expose_to_rtaudio:1776): exposing Master/TP Stereo in L
+zrythm-Message: 09:43:59.822: (expose_to_rtaudio:1776): exposing Master/TP Stereo in R
+zrythm-Message: 09:43:59.822: (expose_to_rtaudio:1776): exposing Master/Stereo out L
+zrythm-Message: 09:43:59.822: (expose_to_rtaudio:1776): exposing Master/Stereo out R
+zrythm-Message: 09:43:59.822: (engine_update_frames_per_tick:146): updating frames per tick: beats per bar 4, bpm 140.000000, sample rate 48000
+zrythm-Message: 09:43:59.822: (engine_update_frames_per_tick:165): frames per tick before: 19.642857 | ticks per frame before: 0.050909
+zrythm-Message: 09:43:59.822: (engine_update_frames_per_tick:176): frames per tick after: 21.428571 | ticks per frame after: 0.046667
+zrythm-Message: 09:43:59.822: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/exports
+zrythm-Message: 09:43:59.825: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/exports/stems
+zrythm-Message: 09:43:59.825: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/pool
+zrythm-Message: 09:43:59.826: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/plugins/states
+zrythm-Message: 09:43:59.828: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/plugins/ext_file_copies
+zrythm-Message: 09:43:59.829: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/plugins/ext_file_links
+zrythm-Message: 09:43:59.830: (create_default:619): recreating main window...
+zrythm-Message: 09:43:59.830: (recreate_main_window:121): recreating main window...
+zrythm-Message: 09:43:59.831: (main_window_widget_init:502): Initing main window widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.088: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.091: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.092: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.093: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.094: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.096: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.097: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.098: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.099: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.100: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.101: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.103: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.103: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.104: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.105: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.106: (z_pango_create_layout_from_description:24): font description: Normal 7
+zrythm-Message: 09:44:00.177: (plugin_browser_widget_new:1067): setting plugin browser divider pos to 220
+zrythm-Message: 09:44:00.181: (panel_file_browser_widget_new:429): Instantiating panel_file_browser widget...
+zrythm-Message: 09:44:00.189: (chord_pack_browser_widget_new:341): Instantiating chord_pack_browser widget...
+zrythm-Message: 09:44:00.335: (main_window_widget_init:833): done
+zrythm-Message: 09:44:00.479: (create_default:644): setting up main window...
+zrythm-Message: 09:44:00.479: (setup_main_window:160): setting up main window...
+zrythm-Message: 09:44:00.479: (event_manager_start_events:1261): event_manager_start_events: starting...
+zrythm-Message: 09:44:00.479: (event_manager_start_events:1269): event_manager_start_events: starting processing events...
+zrythm-Message: 09:44:00.479: (event_manager_start_events:1273): event_manager_start_events: done...
+zrythm-Message: 09:44:00.479: (main_window_widget_setup:341): Setting up...
+(zrythm:21): zrythm-DEBUG: 09:44:00.484: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.485: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.487: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.488: (z_pango_create_layout_from_description:24): font description: Normal 7
+(zrythm:21): zrythm-DEBUG: 09:44:00.489: (tracklist_widget_hard_refresh:568): hard refreshing tracklist
+(zrythm:21): zrythm-DEBUG: 09:44:00.489: (track_widget_new:1804): creating new track widget for Chords
+(zrythm:21): zrythm-DEBUG: 09:44:00.492: (track_widget_new:1804): creating new track widget for Tempo
+(zrythm:21): zrythm-DEBUG: 09:44:00.493: (track_widget_new:1804): creating new track widget for Modulators
+(zrythm:21): zrythm-DEBUG: 09:44:00.495: (track_widget_new:1804): creating new track widget for Markers
+(zrythm:21): zrythm-DEBUG: 09:44:00.495: (track_widget_new:1804): creating new track widget for Master
+(zrythm:21): zrythm-DEBUG: 09:44:00.499: (tracklist_widget_hard_refresh:604): done hard refreshing tracklist
+(zrythm:21): zrythm-DEBUG: 09:44:00.499: (ruler_widget_refresh:1801): pushing UI event ET_RULER_SIZE_CHANGED (ruler_widget_refresh:1801)
+(zrythm:21): zrythm-DEBUG: 09:44:00.499: (ruler_widget_refresh:1801): pushing UI event ET_RULER_SIZE_CHANGED (ruler_widget_refresh:1801)
+(zrythm:21): zrythm-DEBUG: 09:44:00.499: (arranger_widget_setup:6032): setting up arranger widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.501: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.504: (arranger_widget_setup:6132): done setting up arranger
+(zrythm:21): zrythm-DEBUG: 09:44:00.504: (arranger_widget_setup:6032): setting up arranger widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.506: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.506: (arranger_widget_setup:6132): done setting up arranger
+(zrythm:21): zrythm-DEBUG: 09:44:00.508: (arranger_widget_setup:6032): setting up arranger widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.508: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.509: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.509: (arranger_widget_setup:6132): done setting up arranger
+(zrythm:21): zrythm-DEBUG: 09:44:00.509: (arranger_widget_setup:6032): setting up arranger widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.509: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.509: (arranger_widget_setup:6132): done setting up arranger
+(zrythm:21): zrythm-DEBUG: 09:44:00.509: (arranger_widget_setup:6032): setting up arranger widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.509: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.510: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.510: (arranger_widget_setup:6132): done setting up arranger
+(zrythm:21): zrythm-DEBUG: 09:44:00.510: (piano_roll_keys_widget_refresh:392): pushing UI event ET_PIANO_ROLL_KEY_HEIGHT_CHANGED (piano_roll_keys_widget_refresh:392)
+(zrythm:21): zrythm-DEBUG: 09:44:00.510: (piano_roll_set_midi_modifier:264): pushing UI event ET_PIANO_ROLL_MIDI_MODIFIER_CHANGED (piano_roll_set_midi_modifier:264)
+(zrythm:21): zrythm-DEBUG: 09:44:00.510: (arranger_widget_setup:6032): setting up arranger widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.510: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.510: (arranger_widget_setup:6132): done setting up arranger
+(zrythm:21): zrythm-DEBUG: 09:44:00.513: (arranger_widget_setup:6032): setting up arranger widget...
+(zrythm:21): zrythm-DEBUG: 09:44:00.513: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.513: (z_pango_create_layout_from_description:24): font description: Normal 8
+(zrythm:21): zrythm-DEBUG: 09:44:00.514: (arranger_widget_setup:6132): done setting up arranger
+zrythm-Message: 09:44:00.514: (clip_editor_inner_widget_refresh:95): refreshing...
+zrythm-Message: 09:44:00.514: (clip_editor_inner_widget_refresh:185): done
+zrythm-Message: 09:44:00.514: (mixer_widget_setup:147): Setting up...
+zrythm-Message: 09:44:00.549: (mixer_widget_setup:164): done
+(zrythm:21): zrythm-DEBUG: 09:44:00.553: (main_window_widget_setup:379): pushing UI event ET_TRACK_CHANGED (main_window_widget_setup:379)
+(zrythm:21): zrythm-DEBUG: 09:44:00.553: (main_window_widget_setup:380): pushing UI event ET_ARRANGER_SELECTIONS_CHANGED (main_window_widget_setup:380)
+(zrythm:21): zrythm-DEBUG: 09:44:00.553: (main_window_widget_setup:383): pushing UI event ET_MAIN_WINDOW_LOADED (main_window_widget_setup:383)
+zrythm-Message: 09:44:00.670: (event_manager_process_now:1335): processing events now...
+(zrythm:21): zrythm-DEBUG: 09:44:00.670: (left_dock_edge_widget_refresh:78): refreshing left dock edge...
+(zrythm:21): zrythm-DEBUG: 09:44:00.670: (inspector_track_widget_show_tracks:82): showing 1 tracks (set notebook page: 0)
+(zrythm:21): zrythm-DEBUG: 09:44:00.670: (inspector_track_widget_show_tracks:100): track Master
+(zrythm:21): zrythm-DEBUG: 09:44:00.687: (inspector_plugin_widget_show:51): showing plugin inspector contents (set notebook page: 0)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.687: (timeline_toolbar_widget_refresh:28): settings merge button sensitivity 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.688: (left_dock_edge_widget_refresh:78): refreshing left dock edge...
+(zrythm:21): zrythm-DEBUG: 09:44:00.688: (inspector_track_widget_show_tracks:82): showing 1 tracks (set notebook page: 0)
+(zrythm:21): zrythm-DEBUG: 09:44:00.688: (inspector_track_widget_show_tracks:100): track Master
+(zrythm:21): zrythm-DEBUG: 09:44:00.695: (inspector_plugin_widget_show:51): showing plugin inspector contents (set notebook page: 0)...
+zrythm-Message: 09:44:00.695: (ui_show_message_full:156): (null): Your user does not have enough privileges to allow Zrythm to lock unlimited memory. This may cause audio dropouts. Please refer to the 'Getting Started' section in the user manual for details.
+(zrythm:21): zrythm-DEBUG: 09:44:00.697: (on_focus_widget_changed:424): nothing focused
+zrythm-Message: 09:44:00.701: (ui_show_message_full:156): (null): Your user does not have enough privileges to allow Zrythm to set the scheduling priority of threads. Please refer to the 'Getting Started' section in the user manual for details.
+zrythm-Message: 09:44:00.705: (process_events:1245): More than 6 events processed. Optimization needed.
+zrythm-Message: 09:44:00.705: (event_manager_process_now:1340): done
+zrythm-Message: 09:44:00.706: (main_window_widget_setup:393): done
+(zrythm:21): zrythm-DEBUG: 09:44:00.706: (setup_main_window:164): pushing UI event ET_PROJECT_LOADED (setup_main_window:164)
+zrythm-Message: 09:44:00.706: (router_recalc_graph:164): Recalculating...
+zrythm-Message: 09:44:00.708: (graph_update_latencies:475): updating graph latencies...
+(zrythm:21): zrythm-DEBUG: 09:44:00.708: (graph_update_latencies:482): setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.708: (graph_update_latencies:490): done setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.708: (graph_update_latencies:492): iterating over 255 nodes...
+(zrythm:21): zrythm-DEBUG: 09:44:00.708: (graph_update_latencies:503): iterating done...
+zrythm-Message: 09:44:00.708: (graph_update_latencies:505): Total latencies:
+Playback: 0
+Recording: 0
+
+zrythm-Message: 09:44:00.709: (router_recalc_graph:198): done
+zrythm-Message: 09:44:00.709: (create_default:658): done creating default project
+zrythm-Message: 09:44:00.709: (project_validate:313): project_validate: validating...
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:959): validating track 'Chords'...
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:1075): done validating track 'Chords'
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:959): validating track 'Tempo'...
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:1075): done validating track 'Tempo'
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:959): validating track 'Modulators'...
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:1075): done validating track 'Modulators'
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:959): validating track 'Markers'...
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:1075): done validating track 'Markers'
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:959): validating track 'Master'...
+(zrythm:21): zrythm-DEBUG: 09:44:00.709: (track_validate:1075): done validating track 'Master'
+zrythm-Message: 09:44:00.709: (project_validate:339): project_validate: done
+zrythm-Message: 09:44:00.709: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto
+zrythm-Message: 09:44:00.710: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/exports
+zrythm-Message: 09:44:00.710: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/exports/stems
+zrythm-Message: 09:44:00.711: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/pool
+zrythm-Message: 09:44:00.711: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/plugins/states
+zrythm-Message: 09:44:00.712: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/plugins/ext_file_copies
+zrythm-Message: 09:44:00.712: (io_mkdir:96): Creating directory: /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/plugins/ext_file_links
+zrythm-Message: 09:44:00.713: (audio_pool_remove_unused:312): --- removing unused files from pool ---
+zrythm-Message: 09:44:00.713: (audio_pool_remove_unused:367): audio_pool_remove_unused: done, removed 0 clips
+(zrythm:21): zrythm-DEBUG: 09:44:00.713: (audio_pool_write_to_disk:501): waiting for thread pool to finish...
+(zrythm:21): zrythm-DEBUG: 09:44:00.714: (audio_pool_write_to_disk:503): done
+zrythm-Message: 09:44:00.714: (project_clone:1171): cloning project...
+(zrythm:21): zrythm-DEBUG: 09:44:00.714: (track_new:220): creating track 'Chords'
+(zrythm:21): zrythm-DEBUG: 09:44:00.714: (track_generate_automation_tracks:1626): generated automation tracks for 'Chords'
+(zrythm:21): zrythm-DEBUG: 09:44:00.714: (track_new:220): creating track 'Tempo'
+(zrythm:21): zrythm-DEBUG: 09:44:00.714: (track_generate_automation_tracks:1626): generated automation tracks for 'Tempo'
+(zrythm:21): zrythm-DEBUG: 09:44:00.714: (track_new:220): creating track 'Modulators'
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (track_generate_automation_tracks:1626): generated automation tracks for 'Modulators'
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (track_new:220): creating track 'Markers'
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (track_generate_automation_tracks:1626): generated automation tracks for 'Markers'
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (track_new:220): creating track 'Master'
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (track_generate_automation_tracks:1626): generated automation tracks for 'Master'
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (track_new:220): creating track 'Master'
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (track_generate_automation_tracks:1626): generated automation tracks for 'Master'
+zrythm-Message: 09:44:00.715: (project_clone:1224): finished cloning project
+(zrythm:21): zrythm-DEBUG: 09:44:00.715: (cleanup_plugin_state_dirs:870): cleaning plugin state dirs...
+(zrythm:21): zrythm-DEBUG: 09:44:00.716: (cleanup_plugin_state_dirs:947): cleaned plugin state dirs
+zrythm-Message: 09:44:00.716: (serialize_project_thread:773): serializing project to json...
+zrythm-Message: 09:44:00.717: (project_serialize_to_json_str:721): done writing json to string
+zrythm-Message: 09:44:00.717: (serialize_project_thread:778): time to serialize: 1ms
+zrythm-Message: 09:44:00.717: (_project_compress:144): using zstd v1.5.6
+zrythm-Message: 09:44:00.717: (_project_compress:171): compressing project...
+zrythm-Message: 09:44:00.718: (_project_compress:229): Compression : 184941 bytes -> 6935 bytes
+zrythm-Message: 09:44:00.718: (serialize_project_thread:801): serialize_project_thread: saving project file at /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/project.zpj...
+zrythm-Message: 09:44:00.719: (serialize_project_thread:814): serialize_project_thread: successfully saved project
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (project_idle_saved_cb:854): pushing UI event ET_PROJECT_SAVED (project_idle_saved_cb:854)
+zrythm-Message: 09:44:00.731: (project_free:1254): project_free: tearing down...
+zrythm-Message: 09:44:00.731: (undo_manager_free:374): undo_manager_free: freeing...
+zrythm-Message: 09:44:00.731: (undo_stack_free:370): undo_stack_free: freeing...
+zrythm-Message: 09:44:00.731: (undo_stack_free:383): undo_stack_free: done
+zrythm-Message: 09:44:00.731: (undo_stack_free:370): undo_stack_free: freeing...
+zrythm-Message: 09:44:00.731: (undo_stack_free:383): undo_stack_free: done
+zrythm-Message: 09:44:00.731: (undo_manager_free:383): undo_manager_free: done
+zrythm-Message: 09:44:00.731: (tracklist_free:1814): tracklist_free: freeing...
+zrythm-Message: 09:44:00.731: (tracklist_remove_track:791): tracklist_remove_track: removing [4] Master - remove plugins 1 - free track 1 - pub events 0 - recalc graph 0 - num tracks before deletion: 5
+zrythm-Message: 09:44:00.731: (track_lane_clear:377): clearing track lane 0 (0x55c3c06a34c0) for track 'Master' | num regions 0
+zrythm-Message: 09:44:00.731: (track_disconnect:2054): disconnecting track 'Master' (4)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (channel_disconnect:2111): disconnecting channel Master
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (track_disconnect:2106): done disconnecting
+zrythm-Message: 09:44:00.731: (tracklist_move_track:893): tracklist_move_track: Master from 4 to 4
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (track_free:3752): freeing track 'Master' (pos -1)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (track_free:3858): done freeing track
+zrythm-Message: 09:44:00.731: (tracklist_remove_track:866): tracklist_remove_track: done
+zrythm-Message: 09:44:00.731: (tracklist_remove_track:791): tracklist_remove_track: removing [3] Markers - remove plugins 1 - free track 1 - pub events 0 - recalc graph 0 - num tracks before deletion: 4
+zrythm-Message: 09:44:00.731: (track_lane_clear:377): clearing track lane 0 (0x55c3c097f640) for track 'Markers' | num regions 0
+zrythm-Message: 09:44:00.731: (track_disconnect:2054): disconnecting track 'Markers' (3)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (track_disconnect:2106): done disconnecting
+zrythm-Message: 09:44:00.731: (tracklist_move_track:893): tracklist_move_track: Markers from 3 to 3
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (track_free:3752): freeing track 'Markers' (pos -1)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (track_free:3858): done freeing track
+zrythm-Message: 09:44:00.731: (tracklist_remove_track:866): tracklist_remove_track: done
+zrythm-Message: 09:44:00.731: (tracklist_remove_track:791): tracklist_remove_track: removing [2] Modulators - remove plugins 1 - free track 1 - pub events 0 - recalc graph 0 - num tracks before deletion: 3
+zrythm-Message: 09:44:00.731: (track_lane_clear:377): clearing track lane 0 (0x55c3c037a1f0) for track 'Modulators' | num regions 0
+zrythm-Message: 09:44:00.731: (track_disconnect:2054): disconnecting track 'Modulators' (2)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.731: (track_disconnect:2106): done disconnecting
+zrythm-Message: 09:44:00.731: (tracklist_move_track:893): tracklist_move_track: Modulators from 2 to 2
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3752): freeing track 'Modulators' (pos -1)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3858): done freeing track
+zrythm-Message: 09:44:00.732: (tracklist_remove_track:866): tracklist_remove_track: done
+zrythm-Message: 09:44:00.732: (tracklist_remove_track:791): tracklist_remove_track: removing [1] Tempo - remove plugins 1 - free track 1 - pub events 0 - recalc graph 0 - num tracks before deletion: 2
+zrythm-Message: 09:44:00.732: (track_lane_clear:377): clearing track lane 0 (0x55c3bfb669a0) for track 'Tempo' | num regions 0
+zrythm-Message: 09:44:00.732: (track_disconnect:2054): disconnecting track 'Tempo' (1)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_disconnect:2106): done disconnecting
+zrythm-Message: 09:44:00.732: (tracklist_move_track:893): tracklist_move_track: Tempo from 1 to 1
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3752): freeing track 'Tempo' (pos -1)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3858): done freeing track
+zrythm-Message: 09:44:00.732: (tracklist_remove_track:866): tracklist_remove_track: done
+zrythm-Message: 09:44:00.732: (tracklist_remove_track:791): tracklist_remove_track: removing [0] Chords - remove plugins 1 - free track 1 - pub events 0 - recalc graph 0 - num tracks before deletion: 1
+zrythm-Message: 09:44:00.732: (track_lane_clear:377): clearing track lane 0 (0x55c3c097f770) for track 'Chords' | num regions 0
+zrythm-Message: 09:44:00.732: (track_disconnect:2054): disconnecting track 'Chords' (0)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (channel_disconnect:2111): disconnecting channel Chords
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_disconnect:2106): done disconnecting
+zrythm-Message: 09:44:00.732: (tracklist_move_track:893): tracklist_move_track: Chords from 0 to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3752): freeing track 'Chords' (pos -1)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3858): done freeing track
+zrythm-Message: 09:44:00.732: (tracklist_remove_track:866): tracklist_remove_track: done
+zrythm-Message: 09:44:00.732: (tracklist_free:1840): tracklist_free: done
+zrythm-Message: 09:44:00.732: (track_disconnect:2054): disconnecting track 'Master' (4)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (channel_disconnect:2111): disconnecting channel Master
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_disconnect:2106): done disconnecting
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3752): freeing track 'Master' (pos 4)...
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (track_free:3858): done freeing track
+(zrythm:21): zrythm-DEBUG: 09:44:00.732: (engine_free:2112): freeing engine...
+(zrythm:21): zrythm-DEBUG: 09:44:00.733: (engine_free:2186): finished freeing engine
+zrythm-Message: 09:44:00.733: (project_free:1307): project_free: free'd project
+zrythm-Message: 09:44:00.733: (project_activate:443): Activating main project 1 2 3 cuarto (0x55c3bde2b1e0)...
+zrythm-Message: 09:44:00.733: (engine_activate:1122): Activating...
+zrythm-Message: 09:44:00.733: (engine_activate:1138): engine_activate: processing engine events
+zrythm-Message: 09:44:00.733: (engine_realloc_port_buffers:1226): Block length changed to 512. reallocating buffers...
+zrythm-Message: 09:44:00.733: (router_recalc_graph:164): Recalculating...
+zrythm-Message: 09:44:00.735: (graph_update_latencies:475): updating graph latencies...
+(zrythm:21): zrythm-DEBUG: 09:44:00.735: (graph_update_latencies:482): setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.735: (graph_update_latencies:490): done setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.735: (graph_update_latencies:492): iterating over 255 nodes...
+(zrythm:21): zrythm-DEBUG: 09:44:00.735: (graph_update_latencies:503): iterating done...
+zrythm-Message: 09:44:00.735: (graph_update_latencies:505): Total latencies:
+Playback: 0
+Recording: 0
+
+zrythm-Message: 09:44:00.735: (router_recalc_graph:198): done
+zrythm-Message: 09:44:00.735: (engine_realloc_port_buffers:1286): done
+zrythm-Message: 09:44:00.735: (engine_rtaudio_activate:279): engine_rtaudio_activate: activating...
+zrythm-Message: 09:44:00.735: (engine_rtaudio_activate:288): engine_rtaudio_activate: done
+zrythm-Message: 09:44:00.735: (hardware_processor_activate:346): hw processor activate: 1
+zrythm-Message: 09:44:00.735: (engine_activate:1208): processing engine events
+(zrythm:21): zrythm-DEBUG: 09:44:00.736: (engine_activate:1215): pushing UI event ET_ENGINE_ACTIVATE_CHANGED (engine_activate:1215)
+zrythm-Message: 09:44:00.736: (engine_activate:1218): done
+zrythm-Message: 09:44:00.736: (engine_wait_for_pause:963): waiting for engine to pause...
+zrythm-Message: 09:44:00.736: (midi_events_panic_all:1055): ~ midi panic all (queued: 1) ~
+zrythm-Message: 09:44:00.736: (engine_wait_for_pause:1022): setting run to 0 and waiting for cycle to finish...
+zrythm-Message: 09:44:00.736: (dsp_worker_thread:101): WORKER THREAD -1 created (num threads 6)
+zrythm-Message: 09:44:00.736: (engine_wait_for_pause:1030): cycle finished
+(zrythm:21): zrythm-DEBUG: 09:44:00.736: (hardware_processor_rescan_ext_ports:146): rescanning ports...
+(zrythm:21): zrythm-DEBUG: 09:44:00.742: (get_ext_ports_from_rtaudio:633): 1 rtaudio devices found
+(zrythm:21): zrythm-DEBUG: 09:44:00.747: (hardware_processor_rescan_ext_ports:250): [HW processor inputs] have 2 audio and 0 MIDI ports
+(zrythm:21): zrythm-DEBUG: 09:44:00.747: (channel_reconnect_ext_input_ports:522): reconnecting ext inputs for Chords
+zrythm-Message: 09:44:00.747: (port_set_expose_to_backend:3051): called port_set_expose_to_backend with MIDI dummy backend
+zrythm-Message: 09:44:00.747: (router_recalc_graph:164): Recalculating...
+zrythm-Message: 09:44:00.749: (graph_update_latencies:475): updating graph latencies...
+(zrythm:21): zrythm-DEBUG: 09:44:00.749: (graph_update_latencies:482): setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.749: (graph_update_latencies:490): done setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.749: (graph_update_latencies:492): iterating over 255 nodes...
+(zrythm:21): zrythm-DEBUG: 09:44:00.749: (graph_update_latencies:503): iterating done...
+zrythm-Message: 09:44:00.749: (graph_update_latencies:505): Total latencies:
+Playback: 0
+Recording: 0
+
+zrythm-Message: 09:44:00.749: (router_recalc_graph:198): done
+(zrythm:21): zrythm-DEBUG: 09:44:00.749: (channel_reconnect_ext_input_ports:522): reconnecting ext inputs for Master
+zrythm-Message: 09:44:00.749: (router_recalc_graph:164): Recalculating...
+zrythm-Message: 09:44:00.750: (graph_update_latencies:475): updating graph latencies...
+(zrythm:21): zrythm-DEBUG: 09:44:00.751: (graph_update_latencies:482): setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.751: (graph_update_latencies:490): done setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.751: (graph_update_latencies:492): iterating over 255 nodes...
+(zrythm:21): zrythm-DEBUG: 09:44:00.751: (graph_update_latencies:503): iterating done...
+zrythm-Message: 09:44:00.751: (graph_update_latencies:505): Total latencies:
+Playback: 0
+Recording: 0
+
+zrythm-Message: 09:44:00.751: (router_recalc_graph:198): done
+zrythm-Message: 09:44:00.751: (channel_expose_ports_to_backend:475): channel_expose_ports_to_backend: Chords
+zrythm-Message: 09:44:00.751: (port_set_expose_to_backend:3051): called port_set_expose_to_backend with MIDI dummy backend
+zrythm-Message: 09:44:00.751: (port_set_expose_to_backend:3051): called port_set_expose_to_backend with MIDI dummy backend
+zrythm-Message: 09:44:00.751: (channel_expose_ports_to_backend:475): channel_expose_ports_to_backend: Master
+zrythm-Message: 09:44:00.751: (expose_to_rtaudio:1776): exposing Master/TP Stereo in L
+zrythm-Message: 09:44:00.751: (expose_to_rtaudio:1776): exposing Master/TP Stereo in R
+zrythm-Message: 09:44:00.751: (expose_to_rtaudio:1776): exposing Master/Stereo out L
+zrythm-Message: 09:44:00.751: (expose_to_rtaudio:1776): exposing Master/Stereo out R
+zrythm-Message: 09:44:00.751: (router_recalc_graph:164): Recalculating...
+zrythm-Message: 09:44:00.753: (graph_update_latencies:475): updating graph latencies...
+(zrythm:21): zrythm-DEBUG: 09:44:00.753: (graph_update_latencies:482): setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.753: (graph_update_latencies:490): done setting all latencies to 0
+(zrythm:21): zrythm-DEBUG: 09:44:00.753: (graph_update_latencies:492): iterating over 255 nodes...
+(zrythm:21): zrythm-DEBUG: 09:44:00.753: (graph_update_latencies:503): iterating done...
+zrythm-Message: 09:44:00.753: (graph_update_latencies:505): Total latencies:
+Playback: 0
+Recording: 0
+
+zrythm-Message: 09:44:00.753: (router_recalc_graph:198): done
+zrythm-Message: 09:44:00.753: (project_fix_audio_regions:348): fixing audio region positions...
+zrythm-Message: 09:44:00.753: (project_fix_audio_regions:371): done fixing 0 audio region positions
+zrythm-Message: 09:44:00.753: (engine_resume:1066): resuming engine...
+(zrythm:21): zrythm-DEBUG: 09:44:00.753: (transport_move_playhead:667): pushing UI event ET_PLAYHEAD_POS_CHANGED_MANUALLY (transport_move_playhead:667)
+zrythm-Message: 09:44:00.753: (engine_resume:1090): restarting engine: setting fade in samples
+zrythm-Message: 09:44:00.753: (project_activate:476): Project 1 2 3 cuarto (0x55c3bde2b1e0) activated
+(zrythm:21): zrythm-DEBUG: 09:44:00.753: (cleanup_flow_mgr_cb:1207): cleaning up project init flow manager...
+zrythm-Message: 09:44:00.753: (on_setup_main_window:334): setting up...
+zrythm-Message: 09:44:00.753: (on_setup_main_window:356): done
+(zrythm:21): zrythm-DEBUG: 09:44:00.753: (cleanup_flow_mgr_cb:1217): done cleaning up project init flow manager
+(zrythm:21): zrythm-DEBUG: 09:44:00.772: (inspector_track_widget_show_tracks:82): showing 1 tracks (set notebook page: 0)
+(zrythm:21): zrythm-DEBUG: 09:44:00.772: (inspector_track_widget_show_tracks:100): track Master
+(zrythm:21): Gtk-DEBUG: 09:44:01.012: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:01.033: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): zrythm-DEBUG: 09:44:01.034: (z_pango_create_layout_from_description:24): font description: sans-serif 7
+(zrythm:21): zrythm-DEBUG: 09:44:01.043: (z_pango_create_layout_from_description:24): font description: DSEG14 Classic Mini Italic 12
+(zrythm:21): zrythm-DEBUG: 09:44:01.053: (z_pango_create_layout_from_description:57): fontname: DSEG14 Classic Mini
+(zrythm:21): zrythm-DEBUG: 09:44:01.053: (z_pango_create_layout_from_description:24): font description: sans-serif Bold 11
+(zrythm:21): zrythm-DEBUG: 09:44:01.062: (z_pango_create_layout_from_description:24): font description: sans-serif 7
+(zrythm:21): zrythm-DEBUG: 09:44:01.062: (z_pango_create_layout_from_description:24): font description: DSEG14 Classic Mini Italic 12
+(zrythm:21): zrythm-DEBUG: 09:44:01.072: (z_pango_create_layout_from_description:57): fontname: DSEG14 Classic Mini
+(zrythm:21): zrythm-DEBUG: 09:44:01.072: (z_pango_create_layout_from_description:24): font description: sans-serif Bold 11
+(zrythm:21): zrythm-DEBUG: 09:44:01.072: (z_pango_create_layout_from_description:24): font description: sans-serif 7
+(zrythm:21): zrythm-DEBUG: 09:44:01.072: (z_pango_create_layout_from_description:24): font description: DSEG14 Classic Mini Italic 12
+(zrythm:21): zrythm-DEBUG: 09:44:01.082: (z_pango_create_layout_from_description:57): fontname: DSEG14 Classic Mini
+(zrythm:21): zrythm-DEBUG: 09:44:01.082: (z_pango_create_layout_from_description:24): font description: sans-serif Bold 11
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3917): snapshot symbolic icon using mask
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3917): snapshot symbolic icon using mask
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3917): snapshot symbolic icon using mask
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:01.083: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:01.258: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:01.258: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+zrythm-Message: 09:44:11.417: (meter_get_value:56): meter_get_value: blocks read for port Stereo out L is 0
+(zrythm:21): Gtk-DEBUG: 09:44:16.550: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:16.666: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:16.765: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:16.802: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:16.930: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:44:17.169: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gdk-DEBUG: 09:44:33.366: (?:?): proxy 0x55c3c3afb1a0 already has listener
+
+zrythm-Message: 09:44:33.433: (meter_get_value:56): meter_get_value: blocks read for port Stereo out L is 0
+(zrythm:21): Gdk-DEBUG: 09:44:33.627: (?:?): proxy 0x55c3c3afb1a0 already has listener
+
+(zrythm:21): Gdk-DEBUG: 09:44:42.433: (?:?): proxy 0x55c3bd840630 already has listener
+
+(zrythm:21): Gdk-DEBUG: 09:44:42.434: (?:?): proxy 0x55c3c3afb1a0 already has listener
+
+(zrythm:21): zrythm-DEBUG: 09:44:57.834: (project_autosave_cb:593): last action is same as previous backup - skipping autosave
+(zrythm:21): zrythm-DEBUG: 09:45:00.490: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.503: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.504: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.505: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.522: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.539: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.555: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.573: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.590: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.607: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.621: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.639: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.655: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.671: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.689: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.705: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.722: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.738: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.755: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.773: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:00.830: (project_autosave_cb:593): last action is same as previous backup - skipping autosave
+(zrythm:21): zrythm-DEBUG: 09:45:01.305: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:01.323: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+zrythm-Message: 09:45:01.324: (on_dnd_leave:1456): dnd leaving timeline, unhighlighting rect
+(zrythm:21): zrythm-DEBUG: 09:45:01.324: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): Gdk-DEBUG: 09:45:01.327: (?:?): proxy 0x55c3c3afb1a0 already has listener
+
+(zrythm:21): Gdk-DEBUG: 09:45:02.047: (?:?): proxy 0x55c3c3afb1a0 already has listener
+
+(zrythm:21): zrythm-DEBUG: 09:45:03.133: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.136: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.137: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.143: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.159: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+zrythm-Message: 09:45:03.173: (on_dnd_leave:1456): dnd leaving timeline, unhighlighting rect
+(zrythm:21): zrythm-DEBUG: 09:45:03.173: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.174: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.187: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.189: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.192: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.207: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.224: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.240: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.256: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.273: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.289: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.306: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.323: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.339: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.356: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.372: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.389: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.422: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.439: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.456: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.472: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.501: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.516: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.532: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.549: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.565: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.582: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.599: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.615: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.633: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.649: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.665: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.682: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.698: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.717: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.732: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.749: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.765: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.783: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.799: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.815: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.829: (project_autosave_cb:593): last action is same as previous backup - skipping autosave
+(zrythm:21): zrythm-DEBUG: 09:45:03.832: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.848: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.866: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+(zrythm:21): zrythm-DEBUG: 09:45:03.882: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+zrythm-Message: 09:45:03.900: (on_dnd_leave:1456): dnd leaving timeline, unhighlighting rect
+(zrythm:21): zrythm-DEBUG: 09:45:03.901: (arranger_widget_set_highlight_rect:1857): pushing UI event ET_ARRANGER_HIGHLIGHT_CHANGED (arranger_widget_set_highlight_rect:1857)
+zrythm-Message: 09:45:04.134: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.136: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.136: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.151: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.166: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.182: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.200: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.233: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+zrythm-Message: 09:45:04.299: (on_dnd_motion_value_ready:97): error: No compatible transfer format found
+(zrythm:21): Gdk-DEBUG: 09:45:05.066: (?:?): proxy 0x55c3c3afb1a0 already has listener
+
+zrythm-Message: 09:45:05.071: (on_dnd_leave_value_ready:57): error: No compatible transfer format found
+(zrythm:21): zrythm-DEBUG: 09:45:06.829: (project_autosave_cb:593): last action is same as previous backup - skipping autosave
+(zrythm:21): zrythm-DEBUG: 09:45:07.071: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.072: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.072: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.072: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.072: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.073: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.073: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/b3c4b9f/07_Audio 28.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.073: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.073: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.074: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.074: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.074: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.074: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.075: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.075: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.075: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.076: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.076: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.076: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/9985b638/19_Audio 40.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.076: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.077: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav
+zrythm-Message: 09:45:07.078: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav
+zrythm-Message: 09:45:07.078: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav
+zrythm-Message: 09:45:07.079: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav
+zrythm-Message: 09:45:07.079: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav
+zrythm-Message: 09:45:07.079: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav...
+zrythm-Message: 09:45:07.079: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav
+zrythm-Message: 09:45:07.079: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/b3c4b9f/07_Audio 28.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.079: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav...
+zrythm-Message: 09:45:07.080: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/b3c4b9f/07_Audio 28.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav...
+zrythm-Message: 09:45:07.080: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/b3c4b9f/07_Audio 28.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/b3c4b9f/07_Audio 28.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav...
+zrythm-Message: 09:45:07.080: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.080: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.081: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.081: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.081: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav...
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.081: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/9985b638/19_Audio 40.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.081: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav...
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav
+zrythm-Message: 09:45:07.081: (file_import_async:223): Starting an async file import operation for: /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.089: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.089: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.100: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/b3c4b9f/07_Audio 28.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.100: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/b3c4b9f/07_Audio 28.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.107: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.108: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.117: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.120: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.121: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.122: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.122: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.124: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.124: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.125: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.125: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.127: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.127: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.128: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.128: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.130: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/b3c4b9f/07_Audio 28.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.131: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.131: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.136: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.179: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.180: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.181: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.181: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.181: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.181: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.182: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.183: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/92628fd/10_HENRYFONG_100_horn_loop_brass_02_A#_1x124bpm_-400PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.184: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.185: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.243: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.243: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.285: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.285: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.286: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.296: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/383af803/11_SS_VIBR_107_synth_lead_bengala_bright_topline_Emin_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.382: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.382: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.392: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.392: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.392: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.441: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/3b1c259f/12_AB_E2_Dabow_105_Synth_Lead_Shrine_Gm_1x124bpm_-100PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.478: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.478: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.501: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.503: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.503: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.528: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.528: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.530: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/c9d0f7b7/13_PLX_ATT_140_bass_psytech_F_1x124bpm_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.534: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.614: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.616: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.616: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.731: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.732: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.732: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.790: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.790: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.850: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.851: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.851: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.879: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.880: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.910: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/bc08675f/15_Super Solid Kick Fill 01.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.974: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.975: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:07.975: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:07.983: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/efbe05c2/16_041_a__Drum_Beat_125bpm_-_GRIDTECHHOUSE_Zenhiser_1x124bpm_-200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.017: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.018: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.101: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/9985b638/19_Audio 40.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.102: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/9985b638/19_Audio 40.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.102: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/9985b638/19_Audio 40.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.167: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/ef2f5719/17_GIO_FP_80_perc_loop_combined_cajon_palmas_nudillos_mismo_1x124bpm_200PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.180: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.180: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.232: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.233: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.233: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.293: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/9985b638/19_Audio 40.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.294: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/9985b638/19_Audio 40.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.367: (supported_file_new_from_path:29): creating new SupportedFile for /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.368: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/a3d28b19/18_MPC_Analog_Hip_Hop_Trumpet_Beat_90_BPM_1x124bpm_-500PitchAdjusted.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.368: (audio_file_read_metadata:165): attempting to read metadata for /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.368: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.457: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.457: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.475: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/9985b638/19_Audio 40.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.510: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:08.616: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.617: (ensure_sndfile:141): opening sndfile at /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:08.677: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/449fe2f4/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav
+(zrythm:21): zrythm-DEBUG: 09:45:08.826: (audio_file_read_samples:274): reading all frames from file /run/user/1000/doc/fa9300b8/21_SFPSTS_Drum_Loop_04_Shaker_120_1x124bpm.wav
+(zrythm:21): zrythm-DEBUG: 09:45:09.026: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav...
+zrythm-Message: 09:45:09.070: (audio_pool_add_clip:174): adding clip <01_DS_MDH3_fx_impact_heavy> to pool...
+zrythm-Message: 09:45:09.077: (audio_pool_add_clip:189): added clip <01_DS_MDH3_fx_impact_heavy> to pool
+zrythm-Message: 09:45:09.081: (audio_pool_print:545): [Audio Pool]
+[Clip #0] 01_DS_MDH3_fx_impact_heavy ((null)): /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/pool/01_DS_MDH3_fx_impact_heavy.wav
+
+(zrythm:21): zrythm-DEBUG: 09:45:09.081: (file_import_thread_func:200): returning 1 region arrays from task (FileImport 0x55c3c336d720)...
+(zrythm:21): zrythm-DEBUG: 09:45:09.081: (file_import_finish:266): file_import_finish (FileImport 0x55c3c336d720)
+(zrythm:21): zrythm-DEBUG: 09:45:09.081: (import_async_ready_cb:104): async ready: files remaining 20
+zrythm-Message: 09:45:09.081: (import_async_ready_cb:107): Imported regions for /run/user/1000/doc/43054d1c/01_DS_MDH3_fx_impact_heavy.wav
+(zrythm:21): zrythm-DEBUG: 09:45:09.831: (project_autosave_cb:593): last action is same as previous backup - skipping autosave
+(zrythm:21): zrythm-DEBUG: 09:45:10.818: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 1 channels
+(zrythm:21): zrythm-DEBUG: 09:45:11.233: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav...
+zrythm-Message: 09:45:11.254: (audio_pool_add_clip:174): adding clip <14_Deep Down Solo Kick> to pool...
+zrythm-Message: 09:45:11.262: (audio_pool_add_clip:189): added clip <14_Deep Down Solo Kick> to pool
+zrythm-Message: 09:45:11.270: (audio_pool_print:545): [Audio Pool]
+[Clip #0] 01_DS_MDH3_fx_impact_heavy ((null)): /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/pool/01_DS_MDH3_fx_impact_heavy.wav
+[Clip #1] 14_Deep Down Solo Kick ((null)): /run/user/1000/doc/9333645f/zrythm/projects/1 2 3 cuarto/pool/14_Deep Down Solo Kick.wav
+
+(zrythm:21): zrythm-DEBUG: 09:45:11.270: (file_import_thread_func:200): returning 1 region arrays from task (FileImport 0x55c3c3344a00)...
+(zrythm:21): zrythm-DEBUG: 09:45:11.273: (file_import_finish:266): file_import_finish (FileImport 0x55c3c3344a00)
+(zrythm:21): zrythm-DEBUG: 09:45:11.273: (import_async_ready_cb:104): async ready: files remaining 19
+zrythm-Message: 09:45:11.273: (import_async_ready_cb:107): Imported regions for /run/user/1000/doc/c9bb57cb/14_Deep Down Solo Kick.wav
+(zrythm:21): zrythm-DEBUG: 09:45:12.829: (project_autosave_cb:593): last action is same as previous backup - skipping autosave
+(zrythm:21): zrythm-DEBUG: 09:45:12.844: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:12.999: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:13.075: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:13.276: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:13.303: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:13.306: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:13.309: (resampler_new:70): creating new resampler for 5633419 frames at 44100.00 Hz to 48000.00 Hz - 2 channels
+(zrythm:21): zrythm-DEBUG: 09:45:13.496: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/c17bf7a9/04_06_NOISE_RISER_1x124bpm_300PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:13.569: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/688db85e/09_2ae84fc15fa11a15ca8df4989649cdc24820810f7b41099760c97e6264611368.mp3_1x124bpm_300PitchAdjusted_1.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:13.611: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/7489e555/03_ZEN_SCE_124_fx_sweep_up_one_shot_honk_1x124bpm_1.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:13.801: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/fd6ea6ab/02_bf156c1af7d794ada17e934877ce8f2f3ffe0769dcd5c173461431dbd03eb930.mp3_1x124bpm.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:13.816: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/eeb564c4/08_VOX_HP_vocal_oneshot_impact_dry_scream.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:13.856: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/c601872b/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav...
+(zrythm:21): zrythm-DEBUG: 09:45:13.861: (audio_file_finish:302): closing sndfile at /run/user/1000/doc/641b2f21/06_DS_BTH2_124_vocal_hook_female_papi_intro_wet_F#.wav...

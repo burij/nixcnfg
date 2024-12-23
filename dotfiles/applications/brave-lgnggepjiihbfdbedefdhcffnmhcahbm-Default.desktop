@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Reddit
+Exec=/nix/store/d7ni5nshpks8idd4hddrkm46sjyccavw-brave-1.69.168/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=lgnggepjiihbfdbedefdhcffnmhcahbm
+Icon=brave-lgnggepjiihbfdbedefdhcffnmhcahbm-Default
+StartupWMClass=crx_lgnggepjiihbfdbedefdhcffnmhcahbm

@@ -1,0 +1,500 @@
+ls
+cd scripts
+ls
+nano system.nix
+sudo nixos-rebuild switch --upgrade -I nixos-config=/home/burij/System/hosts/ThinkPad/config.nix --show-trace
+system -uv
+sudo nixos-rebuild switch --upgrade -I nixos-config=/home/burij/System/hosts/ThinkPad/config.nix --show-trace
+system -uv
+sudo nixos-rebuild switch --upgrade -I nixos-config=/home/burij/System/hosts/ThinkPad/config.nix --show-trace
+sudo nixos-rebuild switch --upgrade -I nixos-config=/home/burij/System/hosts/ThinkPad/config.nix --show-trace
+sudo nixos-rebuild switch --upgrade -I nixos-config=/home/burij/System/hosts/ThinkPad/config.nix --show-trace
+system -uv
+nano system.nix
+sudo nix-channel update
+sudo nixos-channel update
+nano system.nix
+sudo nix-channel --update
+system -uv
+cd ..
+nano config.nix
+system -uv
+nano config.nix
+system -uv
+system -gr
+system -uv
+system -uv
+git add .
+git commit -m "disabling overlay for obsidian, to upgrade to current version"
+
+export NIXPKGS_ALLOW_UNFREE=1
+nix-shell -p warp-terminal
+system -u
+cd System
+ls
+cat update.log
+system -gr
+mkdir -p $HOME/.local/share/masterpdfeditor/tesseract-5
+system -gr
+system -gb
+nix-shell -p gnome.dconf-editor
+system -uv
+git add .
+git commit -m "disabled the theme switching of theme to light during rebuild"
+history
+system -uv
+dconf reset -f /
+system -uv
+home-manager switch
+system -uv
+system -uv
+system -uv
+neofetch
+nix-shell -p neofetch
+nix-shell
+lua main.lua
+system -uv
+system -u
+system -uv
+system -uv
+system -uv
+system -uv
+rm -r home-manager
+system -uv
+system
+system -g
+system -gb
+system -gb
+system -uv
+system -gb
+git add .
+git commit -m "clipboard-manager including custom shortcuts added"
+history
+git add .
+git commit -m "added script for resetting gnome"
+system -u
+lazydocker
+server
+server -b
+server
+server -u
+nix-shell
+clear
+lua main.lua
+nix-shell
+clear
+lua main.lua
+lua main.lua
+git add .
+git commit -m "made dependencys lokal, to make script more portable"
+nix-shell
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+clear
+clear
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+clear
+clear
+lua main.lua
+lua main.lua
+lua main.lua
+clear
+lua main.lua
+lua main.lua
+lua main.lua
+clear
+lua main.lua
+clear
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+clear
+lua main.lua
+lua main.lua
+lua main.lua
+lua main.lua
+exit
+nix-shell
+nix-shell
+server
+server -b
+server
+server -u
+btm
+system
+system -gr
+nix-shell -p zed-editor
+zed
+zed
+zed-editor
+zed
+system -e
+system
+system -gb
+system -u
+cd System
+ls
+git init
+git add .
+git commit -m "new shortcuts for clipboard manager, simillar to windows"
+cd System
+cd scripts/
+ls
+chmod +X 'edit nixos'
+cd System/
+cd scripts/
+ls
+chmod +x 'edit nixos'
+sh 'edit nixos'
+git add .
+git commit -m "refactoring"
+nix-shell
+git add .
+git commit -m "added sleep function"
+system -u
+cd System
+ls
+cat update.log
+system -u
+cat update.log
+system -uv
+system -uv
+git add .
+git commit -m "solved shortcut conflict between system-tray and clipboard manager"
+system -uv
+system -u
+system -u
+fwupmgr get-devices
+fwupmgr get-devices
+system -u
+fwupmgr get-devices
+fwupdmgr get-devices
+fwupdmgr refresh
+fwupdmgr get-updates
+fwupdmgr update
+system -u
+sudo reboot
+history
+cd System
+ls
+cd scripts
+ls
+sh "firmware upgrade"
+sh "firmware upgrade"
+cat "firmware upgrade"
+fwupdmgr update
+fwupdmgr get-updates
+fwupdmgr update
+cd ..
+ls
+git .
+git add .
+git commit -m "added firmware upgrade toolkit"
+nix-shell
+nix-shell -p zed-editor
+burij@box
+ssh burij @box
+ssh burij@box
+xit
+system -u
+cd System
+cat update.log
+nix-shell
+nix-shell
+lua sandbox.lua
+lua
+system -uv
+sudo reboot
+cd Desktop
+ls
+cd 2416_IDS-Reader/
+nu
+system -gr
+system -gr
+ssh burij@box
+exit
+nix-shell
+nix-shell
+nix-shell
+nix-shell
+nu
+run
+exit
+lua main.lua
+exit
+exit
+exit
+nix-shell
+nix-shell
+git clone https://github.com/manoelcampos/xml2lua ./pkgs/xml2lua
+debug
+cd pkgs
+rm temp.lua
+run
+cd ..
+run
+run
+run
+run
+run
+run
+run
+run
+nix-shell
+run
+lau main.lua
+run
+exit
+nix-shell
+nix-shell
+exit
+nix-shell
+nix-shell
+nix-shell
+nix-shell
+nix-shell
+nix-shell
+run
+clear
+nu
+clear
+set
+clear
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+nix-shell
+nix-shell
+nix-shell
+tesst
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+run
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+debug
+clar
+clear
+run
+run
+run
+run
+run
+run
+nix-shell
+nix.shell
+nix-shell
+debug
+clear
+las
+ls
+rm System-Aufzeichnung\ aus\ 2024-08-24\ 11\:30\:42.syscap 
+clear
+test
+test
+test
+test
+test
+test
+test
+clear
+run
+clear
+run
+clear
+run
+clear
+run
+clear
+run
+clear
+run
+run
+run
+run
+run
+clear
+run
+clear
+clear
+run
+run
+run
+clear
+clear
+run
+run
+run
+run
+clear
+clear
+run
+run
+run
+run
+run
+run
+run
+run
+run
+clear
+clear
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+sudo grsync
+nix-shell
+nix-shell
+nix-shell
+system -uv
+clear
+run
+clear
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+clear
+test
+test
+test
+test
+test
+clear
+test
+test
+test
+test
+test
+test
+test
+rm input.csv
+test
+clear
+git add .
+git commit -m "added generic funktion to convert csv to table"
+run
+run
+clear
+run
+run
+run
+run
+run
+clear
+run
+run
+clear
+run
+run
+run
+run
+run
+run
+run
+clear
+nix-shell
+nix
+nix-shell
+test
+clear
+test
+test
+test
+test
+test
+clear
+clear
+test
+clear
+test
+git add .
+git commit -m "added some generic functions"
+git commit -m "added generic table iteration function"
+git add .
+git commit -m "added generic table iteration function"

@@ -1,0 +1,18 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Mastodon 🐘
+Exec=/nix/store/n82ixdb7m2qlcq9yxkr18d9592dhjhrv-brave-1.61.101/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=baiiigpnjphanceaejpoapgpiephcgnm
+Icon=brave-baiiigpnjphanceaejpoapgpiephcgnm-Default
+StartupWMClass=crx_baiiigpnjphanceaejpoapgpiephcgnm
+Actions=Compose-new-post;Notifications
+
+[Desktop Action Compose-new-post]
+Name=Compose new post
+Exec=/nix/store/n82ixdb7m2qlcq9yxkr18d9592dhjhrv-brave-1.61.101/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=baiiigpnjphanceaejpoapgpiephcgnm --app-launch-url-for-shortcuts-menu-item=https://mstdn.social/publish
+
+[Desktop Action Notifications]
+Name=Notifications
+Exec=/nix/store/n82ixdb7m2qlcq9yxkr18d9592dhjhrv-brave-1.61.101/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=baiiigpnjphanceaejpoapgpiephcgnm --app-launch-url-for-shortcuts-menu-item=https://mstdn.social/notifications

@@ -1,0 +1,200 @@
+networks:
+  wsch_network:
+volumes:
+  nextcloud_aio_mastercontainer:
+    name: nextcloud_aio_mastercontainer
+services:
+
+
+################################################################################
+# box:81 (Passwort von vps.burij.de)
+  nginx_proxy_manager:
+    image: jc21/nginx-proxy-manager:latest
+    restart: unless-stopped
+    container_name: nginx-proxy-manager
+    network_mode: host
+    environment:
+      - DISABLE_IPV6=true
+    volumes:
+      - ./npm/config.json:/app/config/production.json
+      - ./npm/data:/data
+      - ./npm/letsencrypt:/etc/letsencrypt
+################################################################################
+
+
+################################################################################
+# burij.de -> home.burij.de
+  home:
+    restart: always
+    image: nginx:latest
+    volumes:
+      - ./home:/usr/share/nginx/html
+    ports:
+      - 7070:80
+    environment:
+      - N_UID=1000
+      - N_GID=1000
+################################################################################
+
+
+
+################################################################################
+# leeni.burij.de
+  leeniburij:
+    restart: always
+    image: thomastuerk/picocms
+    ports:
+      - 7071:80
+    environment:
+      - INSTALL_PICOCMS=NO
+      #'yes' for new installation, after that to 'no' to prevent theme override
+      - N_UID=1000
+      - N_GID=1000
+    volumes:
+      - ./leeniburij:/var/www/picocms
+################################################################################
+
+
+
+################################################################################
+# usb.burij.de
+  usb:
+    restart: always
+    image: nginx:latest
+    volumes:
+      - ./usb:/usr/share/nginx/html
+    ports:
+      - 7073:80
+    environment:
+      - N_UID=1000
+      - N_GID=1000
+################################################################################
+
+
+
+################################################################################
+# blog.burij.de
+  blog:
+    restart: always
+    image: nginx:latest
+    volumes:
+      - ./blog:/usr/share/nginx/html
+    ports:
+      - 7074:80
+    environment:
+      - N_UID=1000
+      - N_GID=1000
+################################################################################
+
+
+
+################################################################################
+# box:8080 -> nextcloud.burij.de
+# porcupine coexist hate lavish cartwheel moisten grumbly pug
+  nextcloud:
+    image: nextcloud/all-in-one:latest
+    restart: unless-stopped
+    container_name: nextcloud-aio-mastercontainer
+    depends_on:
+      - nginx_proxy_manager
+    volumes:
+      - nextcloud_aio_mastercontainer:/mnt/docker-aio-config
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - 8080:8080
+    environment:
+      - APACHE_PORT=11000
+      - NEXTCLOUD_DATADIR=/srv/ncdata
+      - NEXTCLOUD_MOUNT=/srv/
+################################################################################
+
+
+
+################################################################################
+# metabase.burij.de
+  metabase:
+    image: metabase/metabase:latest
+    restart: unless-stopped
+    volumes:
+      - ./metabase:/metabase-data
+      # Metabase container data is stored in .volumes folder
+      - ./noco/noco.db:/db.sqlite  # This is the main database
+    ports:
+      - 2999:3000
+    environment:
+      MB_DB_FILE: /metabase-data/metabase.db
+      # Metabase URL, Nginx will redirect to this
+      MB_SITE_URL: https://metabase.burij.de/
+################################################################################
+
+
+
+################################################################################
+# weddinger-schule.de -> label.weddinger-schule.de
+  wsch-db:
+    # image: mariadb:10.6.4-focal
+    image: mariadb:latest
+    command: '--default-authentication-plugin=mysql_native_password'
+    volumes:
+      - ./wsch/db_data:/var/lib/mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=iXHGCStz4om6SDVzfRtiQDGTn*yuqyxuj#Sk$@ZRJ
+      - MYSQL_DATABASE=wsch_v86&PcK5$*P5i7YC*jxuYtAAXCaDP#Tam
+      - MYSQL_USER=wsch_6&s&HRQK6JrzmDdbscn8P^Gqj6$HCUN@4
+      - MYSQL_PASSWORD=7gEL6kroPKn2W%LZchA2aiCVM%&BP!QQ9kLJskZeghkWM&DBFX
+    networks:
+     - wsch_network
+  wsch-wp:
+    image: wordpress:latest
+    volumes:
+      - ./wsch/wsch_wp_data:/var/www/html
+    ports:
+      - 8888:80
+    restart: always
+    environment:
+      - WORDPRESS_DB_HOST=wsch-db
+      - WORDPRESS_DB_USER=wsch_6&s&HRQK6JrzmDdbscn8P^Gqj6$HCUN@4
+      - WORDPRESS_DB_PASSWORD=7gEL6kroPKn2W%LZchA2aiCVM%&BP!QQ9kLJskZeghkWM&DBFX
+      - WORDPRESS_DB_NAME=wsch_v86&PcK5$*P5i7YC*jxuYtAAXCaDP#Tam
+    networks:
+     - wsch_network
+################################################################################
+
+
+
+################################################################################
+# box:8096
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
+    volumes:
+      - ./jellyfin:/config
+      - /srv/media/tv:/data/tvshows
+      - /srv/media/movies:/data/movies
+      - /srv/media/training:/data/training
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    restart: unless-stopped
+################################################################################
+
+
+
+################################################################################
+# noco.burij.de
+  noco:
+    image: nocodb/nocodb:latest
+    restart: always
+    ports:
+      - 9080:8080
+    volumes:
+      - ./noco:/usr/app/data
+################################################################################

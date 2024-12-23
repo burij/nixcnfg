@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Bitwarden Vault
+Exec=/nix/store/zdz5ky6w5di6b661yydx714vwffpa7vf-brave-1.67.123/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=hophjnbpmamkldmdaeggjlnpfechpkfl
+Icon=brave-hophjnbpmamkldmdaeggjlnpfechpkfl-Default
+StartupWMClass=crx_hophjnbpmamkldmdaeggjlnpfechpkfl

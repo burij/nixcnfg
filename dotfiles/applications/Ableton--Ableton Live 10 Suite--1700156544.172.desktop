@@ -1,0 +1,27 @@
+[Desktop Entry]
+Name=Ableton Live 10 Suite
+Exec=bottles-cli run -p 'Ableton Live 10 Suite' -b 'Ableton' -- %u
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/burij/.local/share/icons/custom_apps/ableton.png
+Comment=Launch Ableton Live 10 Suite using Bottles.
+StartupWMClass=Ableton Live 10 Suite
+Actions=Configure
+Name[en]=Ableton Live 10 Suite
+Name[en_US]=Ableton Live 10 Suite
+Name[en_US.UTF-8]=Ableton Live 10 Suite
+Comment[en]=Launch Ableton Live 10 Suite using Bottles.
+Comment[en_US]=Launch Ableton Live 10 Suite using Bottles.
+Comment[en_US.UTF-8]=Launch Ableton Live 10 Suite using Bottles.
+Hidden=false
+NoDisplay=false
+StartupNotify=false
+
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=bottles -b 'Ableton'
+Name[en]=Configure in Bottles
+Name[en_US]=Configure in Bottles
+Name[en_US.UTF-8]=Configure in Bottles
+

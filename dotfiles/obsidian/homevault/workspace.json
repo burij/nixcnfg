@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "9634ec6e56232168",
+    "type": "split",
+    "children": [
+      {
+        "id": "03f81a4248416afd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08a0c16777a31133",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Neuer Tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "59f64188ae343c51",
+    "type": "split",
+    "children": [
+      {
+        "id": "e000ea20db1cdecb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b218604b260bc4db",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTimeReverse"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Dateiexplorer"
+            }
+          },
+          {
+            "id": "2ad41e3c93a375c1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Suchen"
+            }
+          },
+          {
+            "id": "d7f27105e14ab688",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Lesezeichen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.5
+  },
+  "right": {
+    "id": "7f74f25c69789eaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "663ee6bd3df53297",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90fa1feaa353bf62",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Desktop/IMG_20241107_082707.jpg",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rückverweise für IMG_20241107_082707"
+            }
+          },
+          {
+            "id": "0ce365425f270d72",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Desktop/2024-11-08_Antech Lab_Befund_Giardia Test.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Ausgehende Links von 2024-11-08_Antech Lab_Befund_Giardia Test öffnen"
+            }
+          },
+          {
+            "id": "532e4061d7050514",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e929f85541c6ef83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Desktop/IMG_20241107_082707.jpg"
+              },
+              "icon": "lucide-list",
+              "title": "Gliederung von IMG_20241107_082707"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Schnellauswahl öffnen": false,
+      "graph:Graphen-Ansicht öffnen": false,
+      "canvas:Neuen Canvas erstellen": false,
+      "daily-notes:Heutige Notiz öffnen": false,
+      "templates:Vorlage einfügen": false,
+      "command-palette:Befehlspalette öffnen": false
+    }
+  },
+  "active": "08a0c16777a31133",
+  "lastOpenFiles": [
+    "Projekte/2408_Steuererklährung 2024/2024-11-07_Vodafone_Rechnung_Internet 2024.pdf",
+    "Desktop/2018-10-01_Siegenia_Bedienungsanleitung_Schalldämmlüfter.pdf",
+    "Projekte/2001_Gleispark/03_Übergabe/2018-10-01_Siegenia_Bedienungsanleitung_Schalldämmlüfter.pdf",
+    "Projekte/2001_Gleispark/03_Übergabe/2020-01-01_sks_Bedienungsanleitung_Video Freisprechanlage.pdf",
+    "Projekte/2001_Gleispark/03_Übergabe/2019-04-01_Warema_Bedienungsanleitung_Raffstore und Außen-Jalousie.pdf",
+    "Projekte/2001_Gleispark/03_Übergabe/2018-11-01_Aereco_Bedienungsanleitung_Zuluftelemente.pdf",
+    "Desktop/2020-01-01_sks_Bedienungsanleitung_Video Freisprechanlage.pdf",
+    "Desktop/2019-04-01_Warema_Bedienungsanleitung_Raffstore und Außen-Jalousie.pdf",
+    "Desktop/2018-11-01_Aereco_Bedienungsanleitung_Zuluftelemente.pdf",
+    "Desktop/2449_1 2 3 Cuatro/1234stems/Bounces/05_VOX_CASSIEMARIN_80_vocal_chop_mark_Amin_1x124bpm_-300PitchAdjusted.wav",
+    "Desktop/2449_1 2 3 Cuatro/1234stems/Bounces/20_DS_MDH3_124_synth_plucks_price_Dmin_1x124bpm_400PitchAdjusted_bip.wav",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240914_081149.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240914_081113.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240913_073412.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240912_133044.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240912_132808.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240912_132805.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240912_132702.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240912_132658.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240912_125309.jpg",
+    "Projekte/2437_Reise nach Hamburg/IMG_20240912_125212.jpg",
+    "Desktop/2024-11-07_Alexander Ruwoldt_Empfehlung_Croque Restaurant.md",
+    "Desktop/httpslua-docs.vercel.app.md",
+    "Desktop/Wiederherstellungsschlüssel EsTz X377 i3cS J2vF.md",
+    "Desktop/2024-11-07_Burij_Liste_Geplante Downloads.md",
+    "Desktop/2404_Steuererklährung 2023/2024-11-07_BuLe_Checkliste_Steuererklärung 2023.md",
+    "Desktop/Filme zum schauen.md",
+    "Desktop/2404_Steuererklährung 2023/2024-09-26_BuLe_Checkliste_Steuererklärung 2023.md",
+    "Notizbuch/Ressourcen/_Programmieren und Linux.md",
+    "Notizbuch/Knowledge Base_Startpunkt.md",
+    "Desktop/Managing dotfiles with GNU Stow  Bastian Venthur's Blog.md",
+    "Notizbuch/Ressourcen/Managing dotfiles with GNU Stow  Bastian Venthur's Blog.md",
+    "Projekte/2311_burij.de/blog/index.md",
+    "Desktop/Ep 0 Design Patterns (TheStartup).md",
+    "Desktop/mail@burij.de in den abholclients anpassen.md",
+    "Notizbuch/Ressourcen/Lua-Script als nix-Paket.md",
+    "Desktop/{ pkgs  import {} }.md",
+    "Desktop/httpsde.wikihow.comEine-Durchwahl-anrufen.md",
+    "Desktop/Cannabis-Eis, Cannabis diesen Sommer genießen.md",
+    "Desktop/Shouter – SoundCloud Hör dir Shouter von tontraeger an auf #SoundCloud.md",
+    "Desktop/Guten Tag, Sie können jetzt bei Frau Dr. Weingart Ihren neuen Vorsorge- bzw. Kontrolltermin vereinba.md",
+    "Desktop/paths referenced with toString are still copied into the nix store. · Issue #589 · nix-communityhome.md",
+    "Notizbuch/Ressourcen/Boilerplates NixOS Script.md",
+    "einze.md",
+    "Desktop/-- Function to traverse and flatten hierarchical data.md",
+    "Desktop/Couples Therapy.md"
+  ]
+}

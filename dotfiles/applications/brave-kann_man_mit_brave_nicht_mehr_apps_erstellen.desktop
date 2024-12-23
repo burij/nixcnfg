@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=kann man mit brave nicht mehr apps erstellen
+Exec=/nix/store/mmx80ybbk341vfzb4f264c7nrbmdal87-brave-1.69.153/opt/brave.com/brave/brave-browser --profile-directory=Default --ignore-profile-directory-if-not-exists https://www.perplexity.ai/search/kann-man-mit-brave-nicht-mehr-9VNkjwHETMWhV4R4YKlUZQ
+Icon=/home/burij/.config/BraveSoftware/Brave-Browser/Default/Web Shortcut Icons/shortcut-392f2fe257d305161aa8cc976a3d3299.png
+URL=https://www.perplexity.ai/search/kann-man-mit-brave-nicht-mehr-9VNkjwHETMWhV4R4YKlUZQ
+Comment=https://www.perplexity.ai/search/kann-man-mit-brave-nicht-mehr-9VNkjwHETMWhV4R4YKlUZQ in einem neuen Tab in Brave öffnen.
+Name[de]=kann man mit brave nicht mehr apps erstellen
+Name[de_DE]=kann man mit brave nicht mehr apps erstellen
+Name[de_DE.UTF-8]=kann man mit brave nicht mehr apps erstellen
+Comment[de]=https://www.perplexity.ai/search/kann-man-mit-brave-nicht-mehr-9VNkjwHETMWhV4R4YKlUZQ in einem neuen Tab in Brave öffnen.
+Comment[de_DE]=https://www.perplexity.ai/search/kann-man-mit-brave-nicht-mehr-9VNkjwHETMWhV4R4YKlUZQ in einem neuen Tab in Brave öffnen.
+Comment[de_DE.UTF-8]=https://www.perplexity.ai/search/kann-man-mit-brave-nicht-mehr-9VNkjwHETMWhV4R4YKlUZQ in einem neuen Tab in Brave öffnen.
+NoDisplay=true
+StartupNotify=false
+Terminal=false
+

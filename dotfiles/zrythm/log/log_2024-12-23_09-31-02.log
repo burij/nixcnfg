@@ -1,0 +1,180 @@
+zrythm-Message: 09:31:02.914: (zrythm_app_init_thread:460): 
+Zrythm 1.0.0+ (debugoptimized)
+  built with gcc 14.2.0 for linux
+    +carla
+    +jack2
+    +pulse
+    +rtaudio
+    +lsp-dsp-lib
+
+zrythm-Message: 09:31:02.915: (greeter_widget_set_progress_and_status:339): Initializing caches
+zrythm-Message: 09:31:02.915: (greeter_widget_set_progress_and_status:339): Initializing file manager
+zrythm-Message: 09:31:02.916: (load_files_from_location:278): Total files: 41
+zrythm-Message: 09:31:02.916: (greeter_widget_set_progress_and_status:343): [Scanning Plugins] Scanning Plugins
+(zrythm:21): zrythm-DEBUG: 09:31:02.916: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.916: (string_print_strv:573): LV2 paths: /app/lib/lv2 | /app/extensions/Plugins/lv2 | /app/lib/zrythm/lv2 | /app/share/zrythm/lv2 
+(zrythm:21): zrythm-DEBUG: 09:31:02.952: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#mono
+zrythm-Message: 09:31:02.952: (add_category_and_author:82): add_category_and_author: Plugin
+zrythm-Message: 09:31:02.952: (add_category_and_author:102): add_category_and_author: Breakfast Quay
+(zrythm:21): zrythm-DEBUG: 09:31:02.952: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#r3mono
+(zrythm:21): zrythm-DEBUG: 09:31:02.952: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#r3stereo
+(zrythm:21): zrythm-DEBUG: 09:31:02.952: (z_carla_discovery_plugin_scanned_cb:197): scanned http://breakfastquay.com/rdf/lv2-rubberband#stereo
+(zrythm:21): zrythm-DEBUG: 09:31:02.954: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/audiofile
+zrythm-Message: 09:31:02.954: (add_category_and_author:102): add_category_and_author: Filipe Coelho
+(zrythm:21): zrythm-DEBUG: 09:31:02.955: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/audiogain
+(zrythm:21): zrythm-DEBUG: 09:31:02.956: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/audiogain_s
+(zrythm:21): zrythm-DEBUG: 09:31:02.956: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/lfo
+(zrythm:21): zrythm-DEBUG: 09:31:02.959: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midichanab
+(zrythm:21): zrythm-DEBUG: 09:31:02.961: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midichanfilter
+(zrythm:21): zrythm-DEBUG: 09:31:02.962: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midichannelize
+(zrythm:21): zrythm-DEBUG: 09:31:02.963: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midifile
+(zrythm:21): zrythm-DEBUG: 09:31:02.964: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midigain
+(zrythm:21): zrythm-DEBUG: 09:31:02.965: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midijoin
+(zrythm:21): zrythm-DEBUG: 09:31:02.967: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/midisplit
+(zrythm:21): zrythm-DEBUG: 09:31:02.968: (z_carla_discovery_plugin_scanned_cb:197): scanned http://kxstudio.sf.net/carla/plugins/miditranspose
+(zrythm:21): zrythm-DEBUG: 09:31:02.968: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-amp
+zrythm-Message: 09:31:02.968: (add_category_and_author:82): add_category_and_author: Dynamics
+zrythm-Message: 09:31:02.968: (add_category_and_author:102): add_category_and_author: 
+(zrythm:21): zrythm-DEBUG: 09:31:02.969: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-fifths
+(zrythm:21): zrythm-DEBUG: 09:31:02.969: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-metro
+(zrythm:21): zrythm-DEBUG: 09:31:02.969: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-midigate
+(zrythm:21): zrythm-DEBUG: 09:31:02.970: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-params
+(zrythm:21): zrythm-DEBUG: 09:31:02.970: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-sampler
+(zrythm:21): zrythm-DEBUG: 09:31:02.971: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-scope#Mono
+zrythm-Message: 09:31:02.971: (add_category_and_author:102): add_category_and_author: Robin Gareus
+(zrythm:21): zrythm-DEBUG: 09:31:02.972: (z_carla_discovery_plugin_scanned_cb:197): scanned http://lv2plug.in/plugins/eg-scope#Stereo
+(zrythm:21): zrythm-DEBUG: 09:31:02.973: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/compressor
+zrythm-Message: 09:31:02.973: (add_category_and_author:102): add_category_and_author: Zrythm DAW
+(zrythm:21): zrythm-DEBUG: 09:31:02.973: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/cubic_distortion
+zrythm-Message: 09:31:02.973: (add_category_and_author:82): add_category_and_author: Distortion
+(zrythm:21): zrythm-DEBUG: 09:31:02.974: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/flanger
+zrythm-Message: 09:31:02.975: (add_category_and_author:82): add_category_and_author: Modulator
+(zrythm:21): zrythm-DEBUG: 09:31:02.975: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/gate_stereo
+(zrythm:21): zrythm-DEBUG: 09:31:02.976: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/highpass_filter
+zrythm-Message: 09:31:02.976: (add_category_and_author:82): add_category_and_author: Filter
+(zrythm:21): zrythm-DEBUG: 09:31:02.976: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/lowpass_filter
+(zrythm:21): zrythm-DEBUG: 09:31:02.978: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/parametric_eq
+zrythm-Message: 09:31:02.978: (add_category_and_author:82): add_category_and_author: Equaliser
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:31:02.978: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+(zrythm:21): Gdk-DEBUG: 09:31:02.978: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 0 into new device 0
+(zrythm:21): Gdk-DEBUG: 09:31:02.978: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 1 into new device 1
+(zrythm:21): zrythm-DEBUG: 09:31:02.979: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/peak_limiter
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+(zrythm:21): Gdk-DEBUG: 09:31:02.979: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 0 into new device 0
+(zrythm:21): Gdk-DEBUG: 09:31:02.979: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 1 into new device 1
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: linux_read_sorted_physical_devices:
+Gdk-INFO: 09:31:02.979: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Original order:
+Gdk-INFO: 09:31:02.980: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)
+Gdk-INFO: 09:31:02.980: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)
+Gdk-INFO: 09:31:02.980: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      Sorted order:
+Gdk-INFO: 09:31:02.980: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [0] Intel(R) UHD Graphics 620 (KBL GT2)  
+Gdk-INFO: 09:31:02.980: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:            [1] llvmpipe (LLVM 19.1.5, 256 bits)  
+(zrythm:21): Gdk-DEBUG: 09:31:02.980: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 0 into new device 0
+(zrythm:21): Gdk-DEBUG: 09:31:02.980: (gdk_vulkan_debug_report:1690): Vulkan: Loader Message: Copying old device 1 into new device 1
+(zrythm:21): zrythm-DEBUG: 09:31:02.980: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/phaser
+Gdk-INFO: 09:31:02.980: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_radeon.so due to not having any physical devices
+Gdk-INFO: 09:31:02.981: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_nouveau.so due to not having any physical devices
+Gdk-INFO: 09:31:02.981: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_intel_hasvk.so due to not having any physical devices
+(zrythm:21): zrythm-DEBUG: 09:31:02.981: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/smooth_delay
+zrythm-Message: 09:31:02.981: (add_category_and_author:82): add_category_and_author: Delay
+Gdk-INFO: 09:31:02.981: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Removing driver /usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_virtio.so due to not having any physical devices
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: Failed to find vkGetDeviceProcAddr in layer "libVkLayer_MESA_device_select.so"
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message: vkCreateDevice layer callstack setup to:
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:    <Application>
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      ||
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:    <Loader>
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:      ||
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:    <Device>
+Gdk-INFO: 09:31:02.982: (gdk_vulkan_debug_report:1692): Vulkan: Loader Message:        Using "Intel(R) UHD Graphics 620 (KBL GT2)" with driver: "/usr/lib/x86_64-linux-gnu/GL/default/lib/libvulkan_intel.so"
+(zrythm:21): zrythm-DEBUG: 09:31:02.983: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/triple_synth
+zrythm-Message: 09:31:02.983: (add_category_and_author:82): add_category_and_author: Instrument
+(zrythm:21): zrythm-DEBUG: 09:31:02.984: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/wah4
+(zrythm:21): zrythm-DEBUG: 09:31:02.984: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/white_noise
+(zrythm:21): zrythm-DEBUG: 09:31:02.986: (z_carla_discovery_plugin_scanned_cb:197): scanned https://lv2.zrythm.org/faust-builtin/zita_rev1
+zrythm-Message: 09:31:02.986: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.986: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.986: (string_print_strv:573): DSSI paths: /app/extensions/Plugins/dssi 
+zrythm-Message: 09:31:02.986: (z_carla_discovery_start:292): no plugins to scan for DSSI (given paths: /app/extensions/Plugins/dssi)
+zrythm-Message: 09:31:02.986: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.986: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.986: (string_print_strv:573): LADSPA paths: /app/extensions/Plugins/ladspa 
+zrythm-Message: 09:31:02.986: (z_carla_discovery_start:292): no plugins to scan for LADSPA (given paths: /app/extensions/Plugins/ladspa)
+zrythm-Message: 09:31:02.986: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.986: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.986: (string_print_strv:573): VST2 paths: /app/extensions/Plugins/vst 
+zrythm-Message: 09:31:02.986: (z_carla_discovery_start:292): no plugins to scan for VST (given paths: /app/extensions/Plugins/vst)
+zrythm-Message: 09:31:02.986: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.986: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.986: (string_print_strv:573): VST3 paths: /app/extensions/Plugins/vst3 
+zrythm-Message: 09:31:02.986: (z_carla_discovery_start:292): no plugins to scan for VST3 (given paths: /app/extensions/Plugins/vst3)
+zrythm-Message: 09:31:02.986: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.986: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.986: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.986: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.986: (z_carla_discovery_start:292): no plugins to scan for SF2 (given paths: )
+zrythm-Message: 09:31:02.987: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.987: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.987: (string_print_strv:573): CLAP paths: /app/extensions/Plugins/clap 
+zrythm-Message: 09:31:02.987: (z_carla_discovery_start:292): no plugins to scan for CLAP (given paths: /app/extensions/Plugins/clap)
+zrythm-Message: 09:31:02.987: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+(zrythm:21): zrythm-DEBUG: 09:31:02.987: (z_carla_discovery_get_discovery_path:46): using zrythm_libdir: /app/lib/zrythm
+zrythm-Message: 09:31:02.987: (string_print_strv:573): JSFX paths
+zrythm-Message: 09:31:02.987: (greeter_widget_set_progress_and_status:335): [Scanning Plugins]
+zrythm-Message: 09:31:02.990: (zrythm_app_startup:1234): done
+zrythm-Message: 09:31:02.990: (zrythm_app_activate:562): Activating...
+zrythm-Message: 09:31:02.990: (zrythm_app_activate:565): done
+zrythm-Message: 09:31:02.994: (cached_plugin_descriptors_serialize_to_file:26): Serializing cached plugin descriptors...
+zrythm-Message: 09:31:02.995: (cached_plugin_descriptors_serialize_to_file:38): Writing cached plugin descriptors to /home/burij/.var/app/org.zrythm.Zrythm/data/zrythm/cached_plugin_descriptors.yaml...
+zrythm-Message: 09:31:03.009: (on_plugin_scan_finished:420): plugin scan finished
+(zrythm:21): Gtk-DEBUG: 09:31:03.056: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+zrythm-Message: 09:31:03.068: (on_prompt_for_project:511): prompting for project...
+zrythm-Message: 09:31:03.069: (on_prompt_for_project:544): done
+(zrythm:21): Gtk-DEBUG: 09:31:03.117: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): Gtk-DEBUG: 09:31:03.117: (gtk_icon_paintable_snapshot_symbolic:3929): snapshot symbolic icon using color-matrix
+(zrythm:21): GLib-GIO-DEBUG: 09:31:05.626: (?:?): Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus < 2.73.3)
+zrythm-Message: 09:31:07.538: (open_ready_cb:404): Loading project: /run/user/1000/doc/64de355f/project.zpj
+zrythm-Message: 09:31:07.571: (post_finish:133): activating zrythm_app.load_project
+zrythm-Message: 09:31:07.576: (greeter_widget_set_progress_and_status:339): Loading Project
+(zrythm:21): zrythm-DEBUG: 09:31:07.576: (on_load_project:407): on_load_project called | open filename '/run/user/1000/doc/64de355f/project.zpj' | opening template 0
+zrythm-Message: 09:31:07.576: (project_init_flow_manager_load_or_create_default_project:1228): project_init_flow_manager_load_or_create_default_project: [STEP 0] filename: /run/user/1000/doc/64de355f/project.zpj, is template: 0
+zrythm-Message: 09:31:07.576: (project_new:714): project_new: Creating...
+zrythm-Message: 09:31:07.576: (project_new:738): project_new: done
+zrythm-Message: 09:31:07.578: (project_get_existing_uncompressed_text:477): project_get_existing_uncompressed_text: getting text for project file /run/user/1000/doc/64de355f/project.zpj
+zrythm-Message: 09:31:07.581: (project_get_existing_uncompressed_text:493): project_get_existing_uncompressed_text: decompressing project...
+zrythm-Message: 09:31:07.581: (_project_compress:144): using zstd v1.5.6
+zrythm-Message: 09:31:07.582: (_project_compress:229): Decompression : 8553 bytes -> 248495 bytes
+zrythm-Message: 09:31:07.591: (continue_load_from_file_after_open_backup_response:828): time to deserialize: 6ms
+zrythm-Message: 09:31:07.592: (continue_load_from_file_after_open_backup_response:863): Project successfully deserialized.
+zrythm-Message: 09:31:07.592: (continue_load_from_file_after_open_backup_response:932): hiding prev window...
+zrythm-Message: 09:31:07.592: (continue_load_from_file_after_open_backup_response:938): continue_load_from_file_after_open_backup_response: freeing previous project...
+zrythm-Message: 09:31:07.592: (project_free:1254): project_free: tearing down...
+zrythm-Message: 09:31:07.592: (project_free:1307): project_free: free'd project
+zrythm-Message: 09:31:07.592: (continue_load_from_file_after_open_backup_response:942): continue_load_from_file_after_open_backup_response: initing loaded structures
+zrythm-Message: 09:31:07.592: (engine_init_loaded:833): Initializing...
+(zrythm:21): zrythm-DEBUG: 09:31:07.592: (audio_clip_init_loaded:184): audio_clip_init_loaded: 0x55d62c5cb920
+
+(zrythm:21): zrythm-CRITICAL **: 09:31:07.592: (audio_clip_get_path_in_pool_from_name:316): /run/user/1000/doc/64de355f/pool does not exist
+(zrythm:21): zrythm-DEBUG: 09:31:09.907: (audio_file_read_metadata:165): attempting to read metadata for (null)
+(zrythm:21): zrythm-DEBUG: 09:31:09.907: (ensure_sndfile:141): opening sndfile at (null)...
+zrythm-Message: 09:31:09.907: (io_mkdir:96): Creating directory: /home/burij/.var/app/org.zrythm.Zrythm/data/zrythm/backtraces
+zrythm-Message: 09:31:12.127: (_backtrace_get:316): getting bt
+zrythm-Message: 09:31:12.127: (_backtrace_get:318): ret 0

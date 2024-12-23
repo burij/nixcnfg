@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Perplexity
+Exec=/nix/store/mmx80ybbk341vfzb4f264c7nrbmdal87-brave-1.69.153/opt/brave.com/brave/brave-browser --profile-directory=Default --ignore-profile-directory-if-not-exists https://www.perplexity.ai/
+Icon=/home/burij/.config/BraveSoftware/Brave-Browser/Default/Web Shortcut Icons/shortcut-c6796dd3d4d283fd3392762683a701cc.png
+URL=https://www.perplexity.ai/
+Comment=https://www.perplexity.ai/ in einem neuen Tab in Brave öffnen.
+Name[de]=Perplexity
+Name[de_DE]=Perplexity
+Name[de_DE.UTF-8]=Perplexity
+Comment[de]=https://www.perplexity.ai/ in einem neuen Tab in Brave öffnen.
+Comment[de_DE]=https://www.perplexity.ai/ in einem neuen Tab in Brave öffnen.
+Comment[de_DE.UTF-8]=https://www.perplexity.ai/ in einem neuen Tab in Brave öffnen.
+NoDisplay=true
+StartupNotify=false
+Terminal=false
+

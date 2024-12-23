@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=iZotope Ozone 9
+Exec=bottles-cli run -p 'iZotope Ozone 9' -b 'Ozone' -- %u
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/burij/.local/share/bottles/bottles/Imported_Ozone/icons/iZotope Ozone 9.png
+Comment=Launch iZotope Ozone 9 using Bottles.
+StartupWMClass=iZotope Ozone 9
+Actions=Configure;
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=bottles -b 'Ozone'

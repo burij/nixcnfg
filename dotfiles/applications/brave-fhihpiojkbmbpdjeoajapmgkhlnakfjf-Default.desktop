@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Tabellen
+Exec=/nix/store/mfkanlrhfc8myk0jbjk4jw23pr7nnbz0-brave-1.60.118/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=fhihpiojkbmbpdjeoajapmgkhlnakfjf
+Icon=brave-fhihpiojkbmbpdjeoajapmgkhlnakfjf-Default
+StartupWMClass=crx_fhihpiojkbmbpdjeoajapmgkhlnakfjf

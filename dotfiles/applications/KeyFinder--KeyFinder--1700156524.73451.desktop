@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=KeyFinder
+Exec=bottles-cli run -p KeyFinder -b 'KeyFinder' -- %u
+Type=Application
+Terminal=false
+Categories=Application;
+Icon=/home/burij/.local/share/bottles/bottles/KeyFinder/icons/KeyFinder.png
+Comment=Launch KeyFinder using Bottles.
+StartupWMClass=KeyFinder
+Actions=Configure;
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=bottles -b 'KeyFinder'

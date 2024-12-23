@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Discord
+Exec=/nix/store/m82nnnh2bfq2mil0lx52s5w6rn8dn0m9-brave-1.61.120/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=mnnkigjjfhgieoagnbiphpffiaopjgnj
+Icon=brave-mnnkigjjfhgieoagnbiphpffiaopjgnj-Default
+StartupWMClass=crx_mnnkigjjfhgieoagnbiphpffiaopjgnj

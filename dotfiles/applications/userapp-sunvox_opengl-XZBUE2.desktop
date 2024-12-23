@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Exec='/home/burij/.nixos/pkgs/r.sunvox/bin/sunvox_opengl' %f
+Name=sunvox_opengl
+Comment=Custom definition for sunvox_opengl

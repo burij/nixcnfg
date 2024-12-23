@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Dateien – Dropbox
+Exec=/nix/store/n82ixdb7m2qlcq9yxkr18d9592dhjhrv-brave-1.61.101/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=npmhldnibbgcpdheiomicdhlmoddgjaf
+Icon=brave-npmhldnibbgcpdheiomicdhlmoddgjaf-Default
+StartupWMClass=crx_npmhldnibbgcpdheiomicdhlmoddgjaf

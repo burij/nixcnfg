@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/burij/.local/share/icons/custom_apps/sunvox.png
+Name=Sunvox
+Name[en]=Sunvox
+Name[en_US]=Sunvox
+Name[en_US.UTF-8]=Sunvox
+Exec=sunvox_opengl
+Hidden=false
+NoDisplay=false
+StartupNotify=false
+Terminal=false
+StartupWMClass=sunvox
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Fedora
+GenericName=Terminal entering Fedora
+Comment=Terminal entering Fedora
+Categories=Distrobox;System;Utility
+Exec=/nix/store/xiz6fax1ffklgb2h0jhlj0xn5vjfbgc8-distrobox-1.5.0.2/bin/distrobox enter  fedora
+Icon=/home/burij/.local/share/icons/distrobox/fedora.png
+Keywords=distrobox;
+NoDisplay=false
+Terminal=true
+TryExec=/nix/store/xiz6fax1ffklgb2h0jhlj0xn5vjfbgc8-distrobox-1.5.0.2/bin/distrobox
+Type=Application

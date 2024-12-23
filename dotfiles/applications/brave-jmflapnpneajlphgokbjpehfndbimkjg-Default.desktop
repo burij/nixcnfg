@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Files - Nextcloud
+Exec=/nix/store/c8xizxbqxrzy2awm9ppn1bxvy1bd6962-brave-1.73.91/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=jmflapnpneajlphgokbjpehfndbimkjg
+Icon=brave-jmflapnpneajlphgokbjpehfndbimkjg-Default
+StartupWMClass=crx_jmflapnpneajlphgokbjpehfndbimkjg
