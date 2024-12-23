@@ -25,7 +25,7 @@ sudo mkdir -p "$EXTRACT_DIR"
 sudo chown -R $USER $BASE_DIR
 
 unzip -q temp.zip -d "$EXTRACT_DIR"
-mv "$EXTRACT_DIR/nixcnfg-main/System"/* "$EXTRACT_DIR"
+mv "$EXTRACT_DIR/nixcnfg-main"/* "$EXTRACT_DIR"
 rm -r "$EXTRACT_DIR/nixcnfg-main"
 
 
