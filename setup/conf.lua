@@ -8,13 +8,12 @@ conf = {
     userconfig    = true, -- links dotfiles to System
     rmdirs        = true, -- removes unnecessary folders from home
     flatpaks      = true, -- install flatpaksupport and flatpaks from the list
-    rebuild       = false, -- rebuild system in the end
+    rebuild       = true, -- rebuild system in the end
 }
 
 conf.user_name = os.getenv("USER")
 conf.root_path = "/data/" .. conf.user_name .. "/System/"
 conf.dotfiles_path =  conf.root_path .. "dotfiles/"
--- conf.dotfiles_path =  "/data/" .. conf.user_name .. "/System/dotfiles/"
 conf.index_path = conf.dotfiles_path .. "index.lua"
 
 conf.dirs_to_remove = {
@@ -41,7 +40,8 @@ conf.flatpak_list = {
     "de.schmidhuberj.DieBahn",
     "com.github.xournalpp.xournalpp",
     "com.github.unrud.VideoDownloader",
-    "org.zrythm.Zrythm"
+    "org.zrythm.Zrythm",
+    "com.github.maoschanz.drawing"
 }
 
 conf.flatpak_postroutine = {
@@ -69,7 +69,7 @@ conf.fp_install_cmd = "flatpak install --system flathub "
 
 conf.drm_cmd = "rm -r $HOME/"
 
-conf.symlink = "lua /data/$USER/System/setup/dotfiles.lua"
+conf.symlink = "lua " .. conf.root_path .. "setup/dotfiles.lua"
 
 conf.add_channel = "sudo nix-channel --add "
 conf.unstable = "https://nixos.org/channels/nixos-unstable nixos"
