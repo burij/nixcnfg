@@ -5,7 +5,6 @@
     [
         ./hardware.nix
         ../../config.nix
-        ../../scripts/server.nix
     ];
 
 

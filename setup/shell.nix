@@ -17,7 +17,7 @@ pkgs.mkShell {
 
 	shellHook = ''
 		wget -O lib.lua https://raw.githubusercontent.com/burij/meelua/main/lib.lua
-		alias run='nano /data/$USER/System/setup/conf.lua && lua main.lua'
+		alias run='lua main.lua'
 		alias gui='love .'
 		alias test='lua draft.lua'
 		alias dot='lua dotfiles.lua'

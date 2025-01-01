@@ -3,7 +3,6 @@
 ################################################################################
 	imports =
 	[
-		./scripts/system.nix
 		./pkgs/offtree.nix
 	];
 
@@ -27,12 +26,12 @@
 		#   	};
 		# });
 
-		sunvox = super.sunvox.overrideAttrs (oldAttrs: rec {
-			src = super.fetchzip {
-				url = "https://www.warmplace.ru/soft/sunvox/sunvox-2.1.2.zip";
-				hash = "sha256-7DZyoOz3jDYsuGqbs0PRs6jdWCxBhSDUKk8KVJQm/3o=";
-		  	};
-		});
+		# sunvox = super.sunvox.overrideAttrs (oldAttrs: rec {
+		# 	src = super.fetchzip {
+		# 		url = "https://www.warmplace.ru/soft/sunvox/sunvox-2.1.2.zip";
+		# 		hash = "sha256-7DZyoOz3jDYsuGqbs0PRs6jdWCxBhSDUKk8KVJQm/3o=";
+		#   	};
+		# });
 
 
 	})];
@@ -48,7 +47,7 @@
         amberol
         apostrophe
         # bitwarden-desktop
-        bottles
+        # bottles
         bottom
         blender
         brave
@@ -65,7 +64,7 @@
         git
         gitnuro
         # gnome-builder
-        gnome-extension-manager
+        # gnome-extension-manager
         gnome-software
         gnome-sound-recorder
         gnome-tweaks
@@ -82,6 +81,7 @@
         gnomeExtensions.night-theme-switcher
         gnomeExtensions.open-bar
         gnomeExtensions.status-area-horizontal-spacing
+        gnomeExtensions.tiling-shell
         gparted
         grsync
         helvum
@@ -128,6 +128,7 @@
         fira-code
         fira-code-symbols
         helvetica-neue-lt-std
+        inter
         liberation_ttf
         mplus-outline-fonts.githubRelease
         noto-fonts
@@ -147,6 +148,8 @@
         dev = "flatpak run org.gnome.Builder -p .";
         shell = "nix-shell";
         box = "ssh burij@box";
+        system = "cd /data/$USER/System/setup/ && "
+          + "chmod +x ./run && ./run && cd $HOME";
     };
 
 
@@ -154,9 +157,16 @@
 
 	users.users.burij = {
 		isNormalUser = true;
-		description = "demo";
+		description = "burij";
 		extraGroups = [ "networkmanager" "wheel" "docker" "lp" ];
 		packages = with pkgs; [ ];
+	};
+
+	users.users.leeni = {
+		isNormalUser = true;
+		description = "leeni";
+		extraGroups = [ "networkmanager" "wheel" "docker" ];
+		packages = with pkgs; [ google-chrome ];
 	};
 
 	i18n.extraLocaleSettings = {
@@ -176,7 +186,7 @@
 
 	services.xserver.enable = true;
 	services.xserver.displayManager.gdm.enable = true;
-	services.xserver.desktopManager.gnome.enable = true;
+	services.xserver.desktopManager.gnome.enable = true;	
 	environment.gnome.excludePackages = with pkgs; [ geary gnome-terminal ];
 
 	nixpkgs.config.allowUnfree = true;

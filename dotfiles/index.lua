@@ -83,5 +83,21 @@ index.commands = {
     "dconf load / < /data/$USER/System/dotfiles/gnome-shell/dconf-settings.ini"
 }
 
+index.export = [[
+	dconf dump / > /data/$USER/System/dotfiles/gnome-shell/dconf-dump.ini
+	SOURCE="/data/$USER/System/dotfiles"
+	FP=$HOME"/.var/app"
+	cp -fv $HOME/.config/BraveSoftware/Brave-Browser/Default/Preferences \
+	$SOURCE/brave/Preferences
+	cp -fv $HOME/.config/BraveSoftware/Brave-Browser/Local\ State \
+	$SOURCE/brave/Local\ State
+	cp -fv $HOME/.config/org.gnome.Ptyxis/session.gvariant \
+	$SOURCE/ptyxis/session.gvariant
+	cp -fv $HOME/.config/mimeapps.list \
+	$SOURCE/defaultapps/mimeapps.list
+	cp -fv $HOME/.config/obsidian/Preferences \
+	$SOURCE/obsidian/Preferences
+]]
+
 --------------------------------------------------------------------------------
 return index

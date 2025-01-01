@@ -6,6 +6,10 @@ conf.back_up_path = "/etc/nixos/configuration." .. os.time()
 --------------------------------------------------------------------------------
 
 local function application()
+
+    local function upgrade()
+        os.execute(conf.upgrade)
+    end
     
     local function run_script()
         conf = f.reload_module( "conf" )
@@ -34,6 +38,7 @@ local function application()
             f.skipcmd_tbl_if_false(conf.flatpak_support, conf.flatpaks),
             f.skipcmd_tbl_if_false(fp_installer, conf.flatpaks),
             f.skipcmd_tbl_if_false(conf.flatpak_postroutine, conf.flatpaks),
+            f.skipcmd_tbl_if_false(conf.gc_collect, conf.purge),
             f.skipcmd_str_if_false(conf.rebuild_cmd, conf.rebuild)
         )
         f.do_cmd_list(final_phase)
@@ -43,16 +48,35 @@ local function application()
         dofile("dotfiles.lua")
     end
     
+    local function export_dotfiles()
+        conf = f.reload_module( "conf" )
+        local load_index = loadfile(conf.index_path)
+        local index = load_index()
+        f.do_cmd(index.export)
+    end
+    
+    local function server_admin()
+        dofile("server.lua")
+    end
+    
     local function edit_conf()
         os.execute("nano ./conf.lua")
     end
     
+    local function edit_nixconf()
+        os.execute("nano " .. conf.root_path .. "config.nix")
+    end
+
     local menu = {
-        title = "NixOS Setup Tool",
+        title = conf.title,
         message = "Use arrow keys to navigate, 'enter' to select",
         options = {
+            { text = "Update system", action = upgrade },
             { text = "Rebuild", action = run_script },
             { text = "Relink dotfiles", action = just_dotfiles },
+            { text = "Export dotfiles", action = export_dotfiles },
+            { text = "Server administration", action = server_admin },
+            { text = "NixOS configuration", action = edit_nixconf },
             { text = "Settings", action = edit_conf },
             { text = "Exit", action = function() os.exit() end }
         },
