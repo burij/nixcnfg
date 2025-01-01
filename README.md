@@ -1,17 +1,19 @@
-# NixOS Configuration
+# NixOS Configuration Manager
 
-A modular NixOS configuration focused on GNOME desktop environment with development tools and multimedia applications.
+A modular NixOS configuration system with a Lua-based management tool, focused on GNOME desktop environment with development tools and multimedia applications.
+
+WARNING: Do not apply or run these scripts on a production system, as it may result in a broken NixOS installation. This repository is intended to serve as a reference for creating your own configuration, not as a production-ready solution.
 
 ## Features
 
-- GNOME desktop environment with custom extensions
-- Development tools (VS Code, GNOME Builder, Git)
-- Multimedia applications (Darktable, GIMP, Inkscape, etc.)
-- Docker and VirtualBox support
-- Printer support with CUPS
-- PipeWire audio system
-- Custom system management script
-- Multi-host configuration management
+- Interactive system management tool
+- Multi-host configuration support
+- Automated system setup and maintenance
+- Dotfiles management
+- Flatpak integration
+- Development environment configuration
+- Application-specific settings management
+- Server administration tools
 
 ## Structure
 
@@ -22,203 +24,123 @@ A modular NixOS configuration focused on GNOME desktop environment with developm
 │   ├── box/          # Server configuration
 │   │   ├── config.nix
 │   │   └── hardware.nix
-│   ├── macbook/      # MacBook configuration
-│   ├── ThinkPad/     # ThinkPad configuration
-│   └── x280/         # X280 configuration
+│   └── [other-hosts]/  # Additional host configs
 ├── setup/             # Setup system
-│   ├── shell.nix     # Development environment
-│   ├── install       # Installation script
-│   └── pkgs/        # Local packages
+│   ├── main.lua      # Main management tool
+│   ├── conf.lua      # Configuration settings
+│   ├── lib.lua       # Helper functions
+│   └── dotfiles.lua  # Dotfiles manager
 ├── scripts/          # System management scripts
-│   ├── system.nix    # Main system management script
-│   └── server.nix    # Server-specific management
-├── pkgs/            # Custom package definitions
-│   └── offtree.nix  # Additional package configurations
 └── dotfiles/        # Application configurations
-    ├── builder/     # GNOME Builder settings
-    ├── darktable/  # Darktable presets
-    └── thunderbird/ # Thunderbird settings
 ```
 
-## Host Management
+## Quick Start
 
-The configuration supports multiple hosts with different roles:
+1. Clone the repository:
+```bash
+mkdir -p /data/$USER
+git clone <your-repo-url> /data/$USER/System
+```
 
-### Server Configuration (box)
-- Docker support with custom data root
-- OpenSSH server
-- Configured port ranges
-- Server-specific storage bindings
+2. Configure settings in `setup/conf.lua`:
+```lua
+conf = {
+    host          = nil,     # Set hostname for new machines
+    link_to_home  = false,   # Link system configuration
+    add_unstable  = false,   # Add unstable channel
+    register_host = false,   # Create new host configuration
+    userconfig    = true,    # Link dotfiles
+    rmdirs        = true,    # Remove default directories
+    flatpaks      = true,    # Install configured Flatpaks
+    rebuild       = true     # Rebuild system after changes
+}
+```
 
-### Laptop Configurations
-- Desktop environment optimizations
+3. Run the management tool:
+```bash
+cd setup
+nix-shell
+lua main.lua
+```
+
+## Management Tool
+
+The interactive management tool provides the following functions:
+
+- System updates and rebuilds
+- Host configuration management
+- Dotfiles linking and export
+- Server administration
+- Configuration editing
+- Flatpak management
+- System maintenance
+
+### Common Commands
+
+```bash
+system    # Run the management TUI, if the configuration is active
+```
+
+## Host Configuration
+
+Each host maintains its own configuration in `hosts/<hostname>/`:
+
 - Hardware-specific settings
-- Power management
-- User-specific configurations
+- Role-based configurations
+- Service settings
+- Package selections
+- User configurations
 
-### Adding New Hosts
+### Adding a New Host
 
-1. Register a new host using the setup tool:
-```bash
-system -s
-# Follow prompts to register new host
+1. Set in conf.lua:
+```lua
+conf.host = "new-hostname"
+conf.register_host = true
+conf.rebuild = true
 ```
 
-2. The system will:
-   - Create host directory structure
-   - Copy hardware configuration
-   - Generate host-specific config.nix
-   - Set hostname and system version
+2. Run the setup tool and follow the prompts
 
-## Setup System
+## Dotfiles Management
 
-The setup system is a Lua-based configuration tool that helps manage the NixOS installation:
+The system manages dotfiles through symbolic links:
 
-### Installation
+1. Store dotfiles in `/data/$USER/System/dotfiles/`
+2. Configure paths in `index.lua` (inside dotfiles)
+3. Use the setup tool to link/export dotfiles
 
-1. Download and run the install script:
-```bash
-wget https://raw.githubusercontent.com/burij/nixcnfg/main/install
-chmod +x install
-./install
-```
+## Server Administration
 
-2. The script will:
-   - Download the configuration
-   - Set up the development environment
-   - Launch the setup tool
+For server configurations:
 
-### Setup Tool Features
-
-- System configuration management
-- Host registration and configuration
-- Dotfiles deployment
-- Application settings restoration
-- Development environment setup
-
-### System Management
-
-The `system` script provides several management commands:
-
-```bash
-system -u    # rebuild and upgrade all packages
-system -a    # rebuild without upgrading
-system -s    # run system setup tool
-system -e    # open system configuration in GNOME Builder
-system -c    # run upgrade check
-system -p    # purge old generations and unused flatpaks
-system -b    # backup application settings
-```
-
-## Maintenance
-
-Regular system maintenance:
-
-1. Update and rebuild:
-```bash
-system -u
-```
-
-2. Clean old generations:
-```bash
-system -p
-```
-
-3. Backup settings:
-```bash
-system -b
-```
+- Docker container management
+- Service deployment
+- Backup handling
+- Security settings
+- Storage management
 
 ## Requirements
 
 - NixOS installation
-- GNOME desktop environment
+- Lua 5.1 or later
 - Git
-- wget
-- Basic Lua support
+- GNOME desktop environment (for desktop configurations)
 
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+3. Make your changes
+4. Submit a pull request
 
 ## License
 
 MIT License - See LICENSE file for details
 
-## Acknowledgments
-
-- NixOS community
-- GNOME project
-- Various open source projects included in the configuration
-
 ## Support
 
-Create an issue in the repository for:
+Create an issue for:
 - Bug reports
 - Feature requests
 - Configuration help
-
-## Configuration
-
-### Main System Configuration (config.nix)
-
-The main configuration includes:
-- System packages
-- User settings
-- Desktop environment configuration
-- Service enablement
-- Hardware configuration
-- Boot settings
-- File system bindings
-
-### Host-Specific Configuration
-
-Each host has its own configuration in the `hosts/` directory:
-- Hardware-specific settings
-- Role-based configurations (server/desktop)
-- Custom filesystem bindings
-- Service configurations
-
-### Development Environment
-
-A Nix shell environment (shell.nix) provides:
-- Lua development tools
-- Build utilities
-- Testing frameworks
-
-### Application Settings
-
-Dotfiles are organized by application:
-- GNOME Builder keyboard shortcuts and preferences
-- Darktable presets and lua scripts
-- Thunderbird settings
-
-## Customization
-
-1. Fork this repository
-2. Register your host:
-   ```bash
-   system -s
-   # Follow prompts to register new host
-   ```
-
-3. Modify host config.nix for your system:
-   - Adjust package list
-   - Configure users
-   - Set locale and timezone
-   - Configure file system bindings
-
-4. Update setup/conf.lua with your preferences:
-   - Set paths
-   - Configure backup locations
-   - Adjust application settings
-
-5. Run the setup tool:
-```bash
-system -s
-```
-
