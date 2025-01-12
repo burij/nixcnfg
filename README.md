@@ -6,14 +6,26 @@ WARNING: Do not apply or run these scripts on a production system, as it may res
 
 ## Features
 
+- Unified configuration management system that handles:
+  - NixOS system configuration
+  - Flatpak applications
+  - User dotfiles
+  - Channel management
+- Single-command rebuild of the entire system
 - Interactive system management tool
 - Multi-host configuration support
 - Automated system setup and maintenance
-- Dotfiles management
-- Flatpak integration
 - Development environment configuration
 - Application-specific settings management
 - Server administration tools
+
+## Key Advantages
+
+This configuration manager stands out by providing:
+- Complete system management without requiring home-manager or flakes
+- One cohesive tool to handle system packages, Flatpaks, and dotfiles
+- Simplified rebuilds that sync all configuration aspects simultaneously
+- Lua-based management that's both powerful and easy to understand
 
 ## Structure
 
@@ -57,12 +69,19 @@ conf = {
 }
 ```
 
-3. Run the management tool:
+3. Run the management tool to rebuild everything at once:
 ```bash
 cd setup
 nix-shell
 lua main.lua
 ```
+
+This single command will:
+- Update NixOS channels
+- Sync system configuration
+- Manage Flatpak applications
+- Deploy dotfiles
+- Rebuild the complete system
 
 ## Management Tool
 
