@@ -1,4 +1,4 @@
-local conf, f = require( "conf" ), require( "lib" )
+local conf, f = require("conf"), require("lib")
 
 conf.symlink_system = "ln -sfv " .. conf.root_path .. " /etc/nixos"
 conf.back_up_path = "/etc/nixos/configuration." .. os.time()
@@ -6,63 +6,55 @@ conf.back_up_path = "/etc/nixos/configuration." .. os.time()
 --------------------------------------------------------------------------------
 
 local function application()
-
     local function upgrade()
         os.execute(conf.upgrade)
     end
-    
-    local function run_script()
-        conf = f.reload_module( "conf" )
-        local user = f.command_and_capture("whoami", "default")
-        local host = conf.host or f.command_and_capture("hostname", "default")
-        local orig_conf = f.do_get_file_content ( 
-            "etc/nixos/configuration.nix" 
-        )
-        local etcnixos = f.inject_var(
-            conf.template_etcnixos, "$HOSTNAME", host
-        )
-        f.do_link_to_home(conf.link_to_home, etcnixos, orig_conf)
-        f.do_register_host( conf.register_host, user, host )
-        
-        local add_unstable = conf.add_channel .. conf.unstable
-        local fp_installer = f.extend_table(
-            conf.flatpak_list, conf.fp_install_cmd, " -y"
+
+    local function rebuild()
+        conf = f.reload_module("conf")
+        local add_channels = f.channels_draft(conf.channels)
+        local fp_installer = f.flatpak_script(
+            conf.flatpak_list, conf.flatpak_postroutine
         )
         local folder_rm = f.extend_table(
             conf.dirs_to_remove, conf.drm_cmd, ""
         )
-        local final_phase = f.compose_list (
-            f.skipcmd_str_if_false(add_unstable, conf.add_unstable),
-            f.skipcmd_str_if_false(conf.symlink, conf.userconfig),
-            f.skipcmd_tbl_if_false(folder_rm, conf.rmdirs),
-            f.skipcmd_tbl_if_false(conf.flatpak_support, conf.flatpaks),
-            f.skipcmd_tbl_if_false(fp_installer, conf.flatpaks),
-            f.skipcmd_tbl_if_false(conf.flatpak_postroutine, conf.flatpaks),
-            f.skipcmd_tbl_if_false(conf.gc_collect, conf.purge),
-            f.skipcmd_str_if_false(conf.rebuild_cmd, conf.rebuild)
+        local build_script = f.compose_list(
+            f.skipcmd_tbl_if_false(add_channels, true),
+            f.skipcmd_str_if_false(conf.rebuild_cmd, true),
+            f.skipcmd_tbl_if_false(conf.flatpak_support, true),
+            f.skipcmd_tbl_if_false(fp_installer, true),
+            f.skipcmd_str_if_false(conf.symlink, true),
+            f.skipcmd_tbl_if_false(folder_rm, true)
         )
-        f.do_cmd_list(final_phase)
+        f.map(build_script, function(x)
+            f.types(x, "string")
+            os.execute(x)
+        end)
     end
-    
+
     local function just_dotfiles()
         dofile("dotfiles.lua")
     end
-    
+
     local function export_dotfiles()
-        conf = f.reload_module( "conf" )
         local load_index = loadfile(conf.index_path)
         local index = load_index()
         f.do_cmd(index.export)
     end
-    
+
     local function server_admin()
         dofile("server.lua")
+    end
+
+    local function nuke_trash()
+        f.do_cmd_list(conf.gc_collect)
     end
     
     local function edit_conf()
         os.execute("nano ./conf.lua")
     end
-    
+
     local function edit_nixconf()
         os.execute("nano " .. conf.root_path .. "config.nix")
     end
@@ -71,38 +63,177 @@ local function application()
         title = conf.title,
         message = "Use arrow keys to navigate, 'enter' to select",
         options = {
-            { text = "Update system", action = upgrade },
-            { text = "Rebuild", action = run_script },
-            { text = "Relink dotfiles", action = just_dotfiles },
-            { text = "Export dotfiles", action = export_dotfiles },
+            { text = "Update system",         action = upgrade },
+            { text = "Rebuild",               action = rebuild },
+            { text = "Relink dotfiles",       action = just_dotfiles },
+            { text = "Export dotfiles",       action = export_dotfiles },
             { text = "Server administration", action = server_admin },
-            { text = "NixOS configuration", action = edit_nixconf },
-            { text = "Settings", action = edit_conf },
-            { text = "Exit", action = function() os.exit() end }
+            { text = "Nuke trash",            action = nuke_trash },
+            { text = "Setup new machine",     action = f.setup_new },
+            { text = "NixOS configuration",   action = edit_nixconf },
+            { text = "Settings",              action = edit_conf },
+            { text = "Exit",                  action = function() os.exit() end }
         },
         selected = 1
-    } 
+    }
     f.do_draw_menu(menu)
-    
 end
 --------------------------------------------------------------------------------
 
+function f.setup_new()
+    -- returns script to setup an new machine
+    local user = conf.user_name or f.read("Username:")
+    local host = f.read("Host:")
+    local path = conf.root_path or f.read("New configs path:")
+    local get_v = "nix-instantiate --eval"
+        .. " '<nixos/nixos>' -A config.system.stateVersion"
+    local version = f.command_and_capture(get_v, f.read("NixOS version:"))
+    local str = string.format(conf.template_new_machine, user, user, path)
+    local default_path = "/etc/nixos/"
+    local orig_conf = f.read_file(default_path .. "configuration.nix")
+    local etcnixos = f.replace(conf.template_etcnixos, "$HOSTNAME", host)
+    local orig_hard = f.read_file(default_path .. "hardware-configuration.nix")
+    local host_conf_temp = f.replace(conf.template_host, "$HOSTNAME", host)
+    local host_conf = f.replace(host_conf_temp, "$VERSION", version)
+    local back_up_path = "/etc/nixos/configuration." .. os.time()
+    f.do_cmd(str)
+    f.do_write_file(back_up_path, orig_conf)
+    f.do_write_file(default_path .. "configuration.nix", etcnixos)
+    f.do_folder( path .. "hosts/" .. host .. "/" )
+    f.do_write_file(path .. "hosts/" .. host .. "/config.nix", host_conf)
+    f.do_write_file(path .. "hosts/" .. host .. "/hardware.nix", orig_hard)
+end
+
+---
+
+function f.channels_draft(x)
+    f.types(x, "table")
+    local tbl = {}
+    local get_channels = f.command_and_capture(
+        "sudo nix-channel --list",
+        ""
+    )
+    local function str_to_table(x)
+        f.types(x, "string")
+        local tbl = {}
+        for line in x:gmatch("[^\n]+") do
+            table.insert(tbl, line)
+        end
+        return tbl
+    end
+    local current_channels = str_to_table(get_channels)
+    local channels_div = f.tbl_div(current_channels, x)
+
+    -- Process removes first
+    local process_removes = f.map(channels_div.removed, function(x)
+        f.types(x, "string")
+        local name = x:match("(%S+)")
+        return string.format("sudo nix-channel --remove %s", name)
+    end)
+
+    -- Then process installs with update after each add
+    local process_installs = f.map(channels_div.added, function(x)
+        f.types(x, "string")
+        local name, url = x:match("(%S+)%s+(.*)")
+        return string.format(
+            "sudo nix-channel --add %s %s && sudo nix-channel --update",
+            url,
+            name
+        )
+    end)
+
+    -- Combine commands, no need for final update since each install does it
+    local tbl = f.compose_list(process_removes, process_installs)
+    return tbl
+end
+
+---
+
+function f.channels(x)
+    -- creates a script to install channels, defaults to unstable
+    f.types(x, "table")   -- list with channels to add
+    local tbl = {}
+    local get_channels = f.command_and_capture(
+        "sudo nix-channel --list",
+        ""
+    )
+    local function str_to_table(x)
+        f.types(x, "string")
+        local tbl = {}
+        for line in x:gmatch("[^\n]+") do
+            table.insert(tbl, line)
+        end
+        return tbl
+    end
+    local current_channels = str_to_table(get_channels)
+    local channels_div = f.tbl_div(current_channels, x)
+    local process_installs = f.map(channels_div.added, function(x)
+        f.types(x, "string")
+        local name, url = x:match("(%S+)%s+(.*)")
+        return string.format("sudo nix-channel --add %s %s", url, name)
+    end)
+    local process_removes = f.map(channels_div.removed, function(x)
+        f.types(x, "string")
+        local name = x:match("(%S+)")
+        str = string.format("sudo nix-channel --remove %s", name)
+        return str
+    end)
+    local tbl = f.compose_list(
+        process_installs, process_removes, "sudo nix-channel --update"
+    )
+    return tbl
+end
+
+---
+
+function f.flatpak_script(x, y)
+    -- creates a script to install flatpaks you wish for
+    f.types(x, "table")    -- target list of flatpaks
+    f.types(y, "string")   -- additional post routine
+    local get_flatpaks_cmd = "flatpak list --app --columns=application"
+    local flatpak_output = f.command_and_capture(get_flatpaks_cmd, "")
+    local function str_to_table(x)
+        f.types(x, "string")
+        local tbl = {}
+        for line in x:gmatch("[^%s]+") do
+            table.insert(tbl, line)
+        end
+        return tbl
+    end
+    local existing_flatpaks = str_to_table(flatpak_output)
+    local flatpak_div = f.tbl_div(existing_flatpaks, x)
+    local process_installs = f.map(flatpak_div.added, function(x)
+        f.types(x, "string")
+        str = string.format("flatpak install --system flathub %s -y", x)
+        return str
+    end)
+    local process_removes = f.map(flatpak_div.removed, function(x)
+        f.types(x, "string")
+        str = string.format("flatpak uninstall %s -y", x)
+        return str
+    end)
+    local tbl = f.compose_list(process_installs, process_removes, y)
+    return tbl
+end
+
+---
+
 function f.do_link_to_home(x, y, z)
-    f.types( x, "boolean" )
-    f.types( y, "string" )
-    f.types( z, "string" )
+    f.types(x, "boolean")
+    f.types(y, "string")
+    f.types(z, "string")
     if x then
-        f.do_cmd_list (conf.own_etcnixos)
+        f.do_cmd_list(conf.own_etcnixos)
         f.do_cmd(conf.symlink_system)
-        f.do_write_file( conf.back_up_path, z )
-        f.do_write_file( "/etc/nixos/configuration.nix", y )
+        f.do_write_file(conf.back_up_path, z)
+        f.do_write_file("/etc/nixos/configuration.nix", y)
     end
 end
 
 ---
 
 function f.do_folder(x)
-    f.types( x, "string" )
+    f.types(x, "string")
     local current_user = os.getenv("USER")
     local check_cmd = "if [ -d "
         .. x
@@ -120,13 +251,13 @@ end
 
 ---
 
-function f.do_register_host( x, y, z )
-    f.types( x, "boolean" )
-    f.types( y, "string" )
-    f.types( z, "string" )
+function f.do_register_host(x, y, z)
+    f.types(x, "boolean")
+    f.types(y, "string")
+    f.types(z, "string")
     if x then
         local hard_path = "/etc/nixos/hardware-configuration.nix"
-        local orig_hard = f.do_get_file_content ( hard_path )
+        local orig_hard = f.do_get_file_content(hard_path)
         local host_folder = conf.root_path .. "hosts/" .. z .. "/"
         local conf_path = host_folder .. "config.nix"
         local hard_path = host_folder .. "hardware.nix"
@@ -138,7 +269,7 @@ function f.do_register_host( x, y, z )
         local host_conf_with_version = f.inject_var(
             host_conf, "$VERSION", system_version
         )
-        f.do_folder( host_folder )
+        f.do_folder(host_folder)
         f.do_write_file(conf_path, host_conf_with_version)
         f.do_write_file(hard_path, orig_hard)
     end
@@ -146,5 +277,3 @@ end
 
 --------------------------------------------------------------------------------
 application()
-
-

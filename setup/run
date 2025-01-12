@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash -p lua5_4_compat nano libnotify
+#!nix-shell -i bash -p lua5_4_compat nano libnotify flatpak
 
 
 export LUA_PATH="./pkgs/share/lua/5.4/?.lua;./share/lua/5.4/?/init.lua;$LUA_PATH"

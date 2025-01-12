@@ -3,8 +3,86 @@ local f = {}
 
 --------------------------------------------------------------------------------
 
+function f.read(x)
+    -- asks question and stores user input in a variable
+    f.types(x, "string")   -- question
+    print(x)
+    local var = io.read()
+    return var
+end
+
+--------------------------------------------------------------------------------
+
+function f.flatten_table(x)
+    -- stores values of a nested table in simple list
+    f.types(x, "table")   -- nested ( k = v ) table
+    local tbl = {}
+    for _, t in pairs(x) do
+        for _, v in pairs(t) do
+            table.insert(tbl, v)
+        end
+    end
+    return tbl
+end
+
+--------------------------------------------------------------------------------
+
+function f.tbl_div(x, y)
+    -- Creates a div table between 2 lists
+    f.types(x, "table")   -- original table
+    f.types(y, "table")   -- new table
+    local tbl = { added = {}, removed = {} }
+    -- Helper function for deep comparison
+    local function deep_equals(a, b)
+        if type(a) ~= type(b) then return false end
+        if type(a) ~= "table" then return a == b end
+        -- Check if tables have same length
+        if #a ~= #b then return false end
+        -- For array-like tables, compare by index
+        for i = 1, #a do
+            if not deep_equals(a[i], b[i]) then return false end
+        end
+        return true
+    end
+    -- Find added elements (in y but not in x)
+    for i = 1, #y do
+        local value = y[i]
+        local found = false
+        for j = 1, #x do
+            local orig_value = x[j]
+            if deep_equals(value, orig_value) then
+                found = true
+                break
+            end
+        end
+        if not found then
+            table.insert(tbl.added, value)
+        end
+    end
+    -- Find removed elements (in x but not in y)
+    for i = 1, #x do
+        local value = x[i]
+        if value ~= nil then -- Skip nil values
+            local found = false
+            for j = 1, #y do
+                local new_value = y[j]
+                if deep_equals(value, new_value) then
+                    found = true
+                    break
+                end
+            end
+            if not found then
+                table.insert(tbl.removed, value)
+            end
+        end
+    end
+    return tbl
+end
+
+--------------------------------------------------------------------------------
+
 function f.do_draw_menu(x)
-    f.types( x, "table" )
+    f.types(x, "table")
     local function menu()
         f.do_clear_screen()
         io.write("\r" .. x.title .. "\n")
@@ -27,25 +105,25 @@ function f.do_draw_menu(x)
             local bracket = io.read(1)
             if bracket == '[' then
                 local arrow = io.read(1)
-                if arrow == 'A' then  -- Up arrow
+                if arrow == 'A' then -- Up arrow
                     x.selected = x.selected - 1
                     if x.selected < 1 then x.selected = #x.options end
-                elseif arrow == 'B' then  -- Down arrow
+                elseif arrow == 'B' then -- Down arrow
                     x.selected = x.selected + 1
                     if x.selected > #x.options then x.selected = 1 end
                 end
             end
-        elseif char == "\n" or char == "\r" then  -- Enter key
+        elseif char == "\n" or char == "\r" then -- Enter key
             f.do_clear_screen()
             os.execute("stty cooked echo")
             x.options[x.selected].action()
-            if x.selected ~= #x.options then  -- If not Exit
+            if x.selected ~= #x.options then -- If not Exit
                 print("\nPress Enter to continue...")
                 io.read()
                 os.execute("stty raw -echo")
             end
-        elseif char == "\3" then  -- Ctrl+C
-            os.execute("stty cooked echo")  -- Reset terminal mode
+        elseif char == "\3" then           -- Ctrl+C
+            os.execute("stty cooked echo") -- Reset terminal mode
             os.exit()
         end
     end
@@ -54,9 +132,9 @@ end
 --------------------------------------------------------------------------------
 
 function f.do_clear_screen()
-    if package.config:sub(1,1) == '\\' then -- Windows
+    if package.config:sub(1, 1) == '\\' then -- Windows
         os.execute("cls")
-    else -- Unix-like
+    else                                    -- Unix-like
         os.execute("clear")
     end
 end
@@ -64,8 +142,8 @@ end
 --------------------------------------------------------------------------------
 
 function f.reload_module(x)
--- reloads modules during runtime
-    f.types( x, "string" ) -- module name
+    -- reloads modules during runtime
+    f.types(x, "string")   -- module name
     package.loaded[x] = nil
     return require(x)
 end
@@ -73,7 +151,7 @@ end
 --------------------------------------------------------------------------------
 
 function f.msg(x)
--- debug function, outputs any data type and returns type
+    -- debug function, outputs any data type and returns type
     if type(x) == "table" then
         f.do_print_table(x)
     else
@@ -85,9 +163,9 @@ end
 --------------------------------------------------------------------------------
 
 function f.compose_list(...)
--- glues strings and tables to a new table
+    -- glues strings and tables to a new table
     local tbl = {}
-    for _, v in ipairs({...}) do
+    for _, v in ipairs({ ... }) do
         if type(v) == "string" then
             table.insert(tbl, v)
         elseif type(v) == "table" then
@@ -107,9 +185,9 @@ end
 --------------------------------------------------------------------------------
 
 function f.skipcmd_str_if_false(x, y)
--- adds skip bash command to a list, if condition false
-    f.types( x, "string" )
-    f.types( y, "boolean" )
+    -- adds skip bash command to a list, if condition false
+    f.types(x, "string")
+    f.types(y, "boolean")
     if y then
         var = x
     else
@@ -121,7 +199,7 @@ end
 --------------------------------------------------------------------------------
 
 function f.skipcmd_tbl_if_false(x, y)
--- adds skip bash command to a list, if condition false
+    -- adds skip bash command to a list, if condition false
     f.types(x, "table")
     f.types(y, "boolean")
     local tbl = {}
@@ -139,7 +217,7 @@ end
 --------------------------------------------------------------------------------
 
 function f.do_cmd(x)
-    f.types( x, 'string' )
+    f.types(x, 'string')
     print(x)
     local handle = io.popen(x)
     local str = handle:read("*a")
@@ -150,9 +228,9 @@ end
 
 --------------------------------------------------------------------------------
 
-function f.do_write_file (x, y)
-    f.types( x, 'string' ) -- filename
-    f.types( y, 'string' ) -- content to write
+function f.do_write_file(x, y)
+    f.types(x, 'string')   -- filename
+    f.types(y, 'string')   -- content to write
     local file = io.open(x, "w")
     if file then
         file:write(y)
@@ -165,7 +243,7 @@ end
 --------------------------------------------------------------------------------
 
 function f.do_cmd_list(x)
-    f.types( x, 'table' ) -- each string will be executed
+    f.types(x, 'table')   -- each string will be executed
     for k, v in pairs(x) do
         if type(v) ~= "table" then
             f.do_if_true(x[k], true)
@@ -178,9 +256,9 @@ end
 --------------------------------------------------------------------------------
 
 function f.extend_table(x, y, z)
-    f.types( x, 'table' )
-    f.types( y, 'string' ) -- prefix for each string in x
-    f.types( z, 'string' ) -- suffix for each string in x
+    f.types(x, 'table')
+    f.types(y, 'string')   -- prefix for each string in x
+    f.types(z, 'string')   -- suffix for each string in x
     local tbl = {}
     for k, v in pairs(x) do
         if type(v) ~= "table" then
@@ -213,10 +291,10 @@ end
 --------------------------------------------------------------------------------
 
 function f.do_if_true(x, y)
-    f.types( x, "string" ) -- command, which will be executed, if true
-    f.types( y, "boolean" )
+    f.types(x, "string")   -- command, which will be executed, if true
+    f.types(y, "boolean")
     if y then
-        local output = f.command_and_capture( x, "done" )
+        local output = f.command_and_capture(x, "done")
         print(x .. "\n" .. output)
     end
 end
@@ -224,9 +302,25 @@ end
 --------------------------------------------------------------------------------
 
 function f.inject_var(x, y, z)
-    f.types( x, "string" )
-    f.types( y, "string" ) -- looks for it in x
-    f.types( z, "string" ) -- and replaces y with that
+-- replaces string withanother sting inside a string, depricated use f.replace
+    f.types(x, "string")
+    f.types(y, "string")   -- looks for it in x
+    f.types(z, "string")   -- and replaces y with that
+    local str = x
+    if str:find(y, 1, true) then
+        return str:gsub(y, z)
+    else
+        return str
+    end
+end
+
+--------------------------------------------------------------------------------
+
+function f.replace(x, y, z)
+    -- replaces string withanother sting inside a string
+    f.types(x, "string")
+    f.types(y, "string") -- looks for it in x
+    f.types(z, "string") -- and replaces y with that
     local str = x
     if str:find(y, 1, true) then
         return str:gsub(y, z)
@@ -238,7 +332,7 @@ end
 --------------------------------------------------------------------------------
 
 function f.compose(f, ...)
-    local funcs = {...}
+    local funcs = { ... }
     return function(x)
         x = f(x)
         for i = 1, #funcs do
@@ -251,47 +345,47 @@ end
 --------------------------------------------------------------------------------
 
 function f.conditional_prefix(condition, a, b)
-	local c
-	if condition then
-		c = a .. b
-	else
-		c = b
-	end
-	return c
+    local c
+    if condition then
+        c = a .. b
+    else
+        c = b
+    end
+    return c
 end
 
 --------------------------------------------------------------------------------
 
-function f.do_write_file_legacy (filename, a)
+function f.do_write_file_legacy(filename, a)
     file = io.open(filename, "w")
-	file:write(a)
+    file:write(a)
     file:close()
 end
 
 --------------------------------------------------------------------------------
 
 function f.true_or_not(a, b)
-	return a == b
+    return a == b
 end
 
 --------------------------------------------------------------------------------
 
 function f.do_user_input(a)
-	local question = a
-	print(question)
-	local answer = io.read()
-	local a = answer
-	return a
+    local question = a
+    print(question)
+    local answer = io.read()
+    local a = answer
+    return a
 end
 
 --------------------------------------------------------------------------------
 
 function f.csv_to_table(csv_string, separator)
-	separator = separator or ","
+    separator = separator or ","
     local tbl = {}
     local headers = {}
     for line in csv_string:gmatch("[^\r\n]+") do
-    	local row = {}
+        local row = {}
         local i = 1
         if #headers == 0 then
             for header in line:gmatch('([^' .. separator .. ']+)') do
@@ -313,35 +407,51 @@ end
 
 --------------------------------------------------------------------------------
 
-function f.do_get_file_content (filename)
+function f.do_get_file_content(filename)
+    -- deprecated, use f.read_file instead
     local file = io.open(filename, "r")
-	if file then
-		content = file:read("*all")
-    		file:close()
-    	else
-    		content = filename .. " not found or not readable!"
-	end
+    if file then
+        content = file:read("*all")
+        file:close()
+    else
+        content = filename .. " not found or not readable!"
+    end
     local b = content
     return b
 end
 
 --------------------------------------------------------------------------------
 
+function f.read_file(x)
+    -- returns content of given file
+    f.types( x, "string" ) -- path to file
+    local file = io.open(x, "r")
+    if file then
+        content = file:read("*all")
+        file:close()
+    else
+        content = filename .. " not found or not readable!"
+    end
+    local str = content
+    return str
+end
+--------------------------------------------------------------------------------
+
 function f.do_print_table(x)
-    f.types( x, 'table' )
-	local inspect = require("inspect")
-	local tbl = inspect(x)
-	print(tbl)
+    f.types(x, 'table')
+    local inspect = require("inspect")
+    local tbl = inspect(x)
+    print(tbl)
 end
 
 --------------------------------------------------------------------------------
 
 function f.get_line(x)
-	if type(x) == "number" then
-    	a = string.rep("'", x)
+    if type(x) == "number" then
+        a = string.rep("'", x)
     else
-    	default = 80
-    	a = string.rep("'", default)
+        default = 80
+        a = string.rep("'", default)
     end
     return a
 end
@@ -349,14 +459,14 @@ end
 --------------------------------------------------------------------------------
 
 function f.combine_text(...)
-    local args = {...}
+    local args = { ... }
     local result = {}
     local a = ""
     if #args == 0 then
         return a
     end
     for i, v in ipairs(args) do
-        f.types( v, 'string' )
+        f.types(v, 'string')
         table.insert(result, v)
     end
     a = table.concat(result, "\n")
@@ -366,8 +476,8 @@ end
 --------------------------------------------------------------------------------
 
 function f.do_sleep(x)
-    f.types( x, 'number' )
-	sleep_time = x
+    f.types(x, 'number')
+    sleep_time = x
     local function get_time()
         return os.clock()
     end
@@ -388,11 +498,11 @@ end
 --------------------------------------------------------------------------------
 
 function f.map_data(x, y)
-    f.types( x, 'table' )
-    f.types( y, 'table' )
+    f.types(x, 'table')
+    f.types(y, 'table')
     local tbl = {}
     for i, a in pairs(y) do
-        f.types( a, 'string' )
+        f.types(a, 'string')
         if x[a] then
             tbl[i] = x[a]
         end
@@ -403,8 +513,8 @@ end
 --------------------------------------------------------------------------------
 
 function f.break_long_text(x, y)
-    f.types( x, 'string' )
-    f.types( y, 'number' )
+    f.types(x, 'string')
+    f.types(y, 'number')
     local lines = {}
     local line = ""
     local words = {}
@@ -471,23 +581,23 @@ end
 
 function f.xml_to_table(a)
     local xml2lua = require("xml2lua")
-	local handler = require("xmlhandler.tree"):new()
+    local handler = require("xmlhandler.tree"):new()
     local parser = xml2lua.parser(handler)
-    if type(a) ~= "string" or not a:find ("<.+>") then
-    		tbl = { a .. " Input of xml_to_table(a) was not valid XML" }
+    if type(a) ~= "string" or not a:find("<.+>") then
+        tbl = { a .. " Input of xml_to_table(a) was not valid XML" }
     else
-    		parser:parse(a)
-    		tbl = handler.root
-	end
+        parser:parse(a)
+        tbl = handler.root
+    end
     return tbl
 end
 
 --------------------------------------------------------------------------------
 
 function f.map(x, y)
--- call function on every element of a table
-    f.types( x, "table" )
-    f.types( y, "function" )
+    -- call function on every element of a table
+    f.types(x, "table")
+    f.types(y, "function")
     local tbl = {}
     local is_list = (#x > 0)
     if is_list then
@@ -502,11 +612,10 @@ function f.map(x, y)
     return tbl
 end
 
-
 --------------------------------------------------------------------------------
 
 function f.filter(x, y)
--- filters table elements based on predicate function
+    -- filters table elements based on predicate function
     f.types(x, 'table')
     f.types(y, 'function')
     local tbl = {}
@@ -530,7 +639,7 @@ end
 --------------------------------------------------------------------------------
 
 function f.reduce(x, y, var)
--- reduces table to single value using accumulator function
+    -- reduces table to single value using accumulator function
     f.types(x, 'table')
     f.types(y, 'function')
     local is_list = (#x > 0)
@@ -548,8 +657,5 @@ function f.reduce(x, y, var)
 end
 
 --------------------------------------------------------------------------------
-
-
-
 
 return f

@@ -1,36 +1,14 @@
 conf = {}
 --------------------------------------------------------------------------------
-conf = {
-    title         = "NixOS setup & management tool\n",
-    host          = nil, -- nil or replace with a 'string' on a new machine
-    link_to_home  = false, -- links /etc/nixos/configuration.nix to System
-    add_unstable  = false, -- adds unstable channel
-    register_host = false, -- be careful with this one! resets your host-config
-    userconfig    = true, -- links dotfiles to System
-    rmdirs        = true, -- removes unnecessary folders from home
-    flatpaks      = true, -- install flatpaksupport and flatpaks from the list
-    purge         = false, -- garbage collection of old staff
-    rebuild       = true, -- rebuild system in the end
-}
-
+conf.title = "NixOS setup & management tool\n"
+conf.host = "nixos" -- hostname: change on new machine
 conf.user_name = os.getenv("USER")
 conf.root_path = "/data/" .. conf.user_name .. "/System/"
 conf.dotfiles_path =  conf.root_path .. "dotfiles/"
 conf.index_path = conf.dotfiles_path .. "index.lua"
 
-conf.upgrade = [[
-echo "NixOS update..."
-sudo nixos-rebuild switch --upgrade
-nixos-rebuild list-generations | grep current
-notify-send -e "NixOS upgrade finished" --icon=software-update-available
-]]
-
-conf.gc_collect = {
-    "flatpak uninstall --unused",
-    "nix-collect-garbage",
-    "sudo nix-collect-garbage",
-    "nix-collect-garbage -d",
-    "sudo nix-collect-garbage -d",
+conf.channels = {
+    "nixos https://nixos.org/channels/nixos-unstable"
 }
 
 conf.dirs_to_remove = {
@@ -41,7 +19,8 @@ conf.dirs_to_remove = {
     "Öffentlich",
     "Videos",
     "Screenshots",
-    "Bildschirmfotos"
+    "Bildschirmfotos",
+    "Camera"
 }
 
 conf.flatpak_list = {
@@ -59,40 +38,43 @@ conf.flatpak_list = {
     "com.github.xournalpp.xournalpp",
     "com.github.unrud.VideoDownloader",
     "org.zrythm.Zrythm",
+    "br.com.wiselabs.simplexity",
     "com.github.maoschanz.drawing",
-    "br.com.wiselabs.simplexity"
 }
 
-conf.flatpak_postroutine = {
-    "flatpak run --command=gsettings com.github.unrud.VideoDownloader set "
-    .. "com.github.unrud.VideoDownloader "
-    .. "download-folder '~/Virtuelles USB/Vinylcase'",
-    "flatpak override --user "
-    .. "--filesystem='~/Virtuelles USB/Vinylcase:create' "
-    .. "com.github.unrud.VideoDownloader"
+conf.flatpak_postroutine = [[
+flatpak run --command=gsettings com.github.unrud.VideoDownloader set \
+com.github.unrud.VideoDownloader download-folder '~/Virtuelles USB/Vinylcase';
+flatpak override --user --filesystem='~/Virtuelles USB/Vinylcase:create' \
+com.github.unrud.VideoDownloader;
+sudo flatpak override --filesystem=host org.gnome.Builder
+]]
+
+conf.upgrade = [[
+echo "NixOS update..."
+sudo nixos-rebuild switch --upgrade
+nixos-rebuild list-generations | grep current
+flatpak update -y
+notify-send -e "NixOS upgrade finished" --icon=software-update-available
+]]
+
+conf.gc_collect = {
+    "flatpak uninstall --unused",
+    "nix-collect-garbage",
+    "sudo nix-collect-garbage",
+    "nix-collect-garbage -d",
+    "sudo nix-collect-garbage -d",
 }
 
-conf.own_etcnixos = {
-    "sudo chown $USER /etc/nixos/",
-    "sudo chown $USER /etc/nixos/configuration.nix",
-    "sudo chmod u+w /etc/nixos/configuration.nix"
-}
-
-conf.rebuild_cmd = "sudo nixos-rebuild boot"
+conf.rebuild_cmd = "sudo nixos-rebuild switch"
 
 conf.flatpak_support =  { "flatpak remote-add --if-not-exists "
     .. "flathub https://flathub.org/repo/flathub.flatpakrepo",
     "flatpak update -y" }
 
-conf.fp_install_cmd = "flatpak install --system flathub "
-
 conf.drm_cmd = "rm -r $HOME/"
 
 conf.symlink = "lua " .. conf.root_path .. "setup/dotfiles.lua"
-
-conf.add_channel = "sudo nix-channel --add "
-conf.unstable = "https://nixos.org/channels/nixos-unstable nixos"
-
 
 conf.srv = {
     title    = "Server Administration\n",
@@ -118,6 +100,9 @@ conf.srv.update = "sudo docker stop $(sudo docker ps -a -q); "
     .. "cd $HOME"
 
 conf.srv.blog = "cd /home/burij/Projekte/2311_burij.de/blog/ && "
+    .. "apostrophe ./index.md && chmod +x ./build; ./build; cd $HOME"
+
+conf.srv.home = "cd /srv/config/home/ && "
     .. "apostrophe ./index.md && chmod +x ./build; ./build; cd $HOME"
 
 --------------------------------------------------------------------------------
@@ -150,6 +135,15 @@ conf.template_host = [[
 
 	];
 }
+]]
+
+---
+
+conf.template_new_machine = [[
+sudo chown %s /etc/nixos/;
+sudo chown %s /etc/nixos/configuration.nix;
+sudo chmod u+w /etc/nixos/configuration.nix;
+ln -sfv %s /etc/nixos;
 ]]
 
 --------------------------------------------------------------------------------

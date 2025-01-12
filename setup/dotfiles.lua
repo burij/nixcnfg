@@ -16,7 +16,6 @@ function application()
         link_files,
         index.commands)
 
-    -- lib.msg(script)
     lib.do_cmd_list(script)
 
 end

@@ -19,27 +19,28 @@ WARNING: Do not apply or run these scripts on a production system, as it may res
 
 ```
 .
-├── config.nix          # Main shared configuration
-├── hosts/             # Host-specific configurations
-│   ├── box/          # Server configuration
+├── install                 # Installation script
+├── config.nix              # Main shared configuration
+├── hosts/                  # Host-specific configurations
+│   ├── box/                # Server configuration
 │   │   ├── config.nix
 │   │   └── hardware.nix
-│   └── [other-hosts]/  # Additional host configs
-├── setup/             # Setup system
-│   ├── main.lua      # Main management tool
-│   ├── conf.lua      # Configuration settings
-│   ├── lib.lua       # Helper functions
-│   └── dotfiles.lua  # Dotfiles manager
-├── scripts/          # System management scripts
-└── dotfiles/        # Application configurations
+│   └── [other-hosts]/      # Additional host configs
+├── setup/                  # Setup system
+│   ├── main.lua            # Main management tool
+│   ├── conf.lua            # Configuration settings
+│   ├── lib.lua             # Helper functions
+│   └── dotfiles.lua        # Dotfiles manager
+├── scripts/                # System management scripts
+└── dotfiles/               # Application configurations
+    └──  index.lua          # Configuration index
 ```
 
 ## Quick Start
 
-1. Clone the repository:
+1. Download and execute the installation script:
 ```bash
-mkdir -p /data/$USER
-git clone <your-repo-url> /data/$USER/System
+curl -sSL https://raw.githubusercontent.com/burij/nixcnfg/main/install | bash
 ```
 
 2. Configure settings in `setup/conf.lua`:
@@ -70,10 +71,12 @@ The interactive management tool provides the following functions:
 - System updates and rebuilds
 - Host configuration management
 - Dotfiles linking and export
-- Server administration
+- Server administration with Docker support
 - Configuration editing
 - Flatpak management
 - System maintenance
+- Logging and debugging support
+- Type checking for critical functions
 
 ### Common Commands
 
@@ -90,35 +93,19 @@ Each host maintains its own configuration in `hosts/<hostname>/`:
 - Service settings
 - Package selections
 - User configurations
-
-### Adding a New Host
-
-1. Set in conf.lua:
-```lua
-conf.host = "new-hostname"
-conf.register_host = true
-conf.rebuild = true
-```
-
-2. Run the setup tool and follow the prompts
-
-## Dotfiles Management
-
-The system manages dotfiles through symbolic links:
-
-1. Store dotfiles in `/data/$USER/System/dotfiles/`
-2. Configure paths in `index.lua` (inside dotfiles)
-3. Use the setup tool to link/export dotfiles
+- Docker compose configurations (for servers)
 
 ## Server Administration
 
 For server configurations:
 
-- Docker container management
-- Service deployment
+- Docker container management with automated updates
+- Service deployment and monitoring
 - Backup handling
 - Security settings
 - Storage management
+- Blog deployment tools
+- Automated maintenance scripts
 
 ## Requirements
 
@@ -126,6 +113,7 @@ For server configurations:
 - Lua 5.1 or later
 - Git
 - GNOME desktop environment (for desktop configurations)
+- Docker (for server configurations)
 
 ## Contributing
 

@@ -10,6 +10,7 @@ pkgs.mkShell {
 		unzip
 	  	gnome-builder
 	  	flatpak
+	  	libnotify
 		(lua5_4.withPackages(ps: with ps; [
 			luarocks
 		]))
