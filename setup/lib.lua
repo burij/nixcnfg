@@ -560,7 +560,7 @@ end
 
 --------------------------------------------------------------------------------
 
-function f.db_request(filename)
+function f.read_json(filename)
     f.types(filename, "string")
     local tbl = {}
     local func = f.compose(f.do_get_file_content, f.json_to_lua)
@@ -570,7 +570,7 @@ end
 
 --------------------------------------------------------------------------------
 
-function f.do_db_post(filename, x)
+function f.write_json(filename, x)
     f.types(filename, "string")
     f.types(x, "table")
     local json_string = f.lua_to_json(x)
